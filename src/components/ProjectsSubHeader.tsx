@@ -44,7 +44,7 @@ const descriptionVariants: Variants = {
     height: "auto",
     transition: {
       opacity: { duration: 0.5 },
-      width: { delay: 0.5, duration: 0.5 },
+      width: { delay: 0.25, duration: 0.5 },
       height: { delay: 1, duration: 0.5 },
     },
   },
@@ -53,15 +53,14 @@ const descriptionVariants: Variants = {
     width: 4,
     height: 4,
     transition: {
-      opacity: { duration: 0.5, delay: 1 },
-      width: { duration: 0.5, delay: 1 },
+      opacity: { duration: 0.5, delay: 0.75 },
+      width: { duration: 0.5, delay: 0.5 },
       height: { duration: 0.5, delay: 0 },
     },
   },
 }
 
 const ProjectsSubHeader = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false)
   const [hoveredIcon, setHoveredIcon] = useState<Resource | undefined>(
     undefined,
   )
@@ -74,7 +73,6 @@ const ProjectsSubHeader = () => {
         !subHeaderRef.current.contains(e.target as Node)
       ) {
         console.log("outside")
-        setDropdownOpen(false)
         setHoveredIcon(undefined)
       }
     }
@@ -94,7 +92,6 @@ const ProjectsSubHeader = () => {
     <div
       className="relative flex w-full flex-col items-center"
       onPointerLeave={() => {
-        setDropdownOpen(false)
         setHoveredIcon(undefined)
       }}
     >
@@ -102,49 +99,42 @@ const ProjectsSubHeader = () => {
         <TbBrandNextjs
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("next")
           }}
         />
         <TbBrandTailwind
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("tailwind")
           }}
         />
         <TbBrandTypescript
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("typescript")
           }}
         />
         <TbBrandPython
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("python")
           }}
         />
         <TbBrandFramer
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("framer")
           }}
         />
         <TbBrandAws
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("aws")
           }}
         />
         <TbBrandGraphql
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("graphql")
           }}
         />
@@ -152,7 +142,6 @@ const ProjectsSubHeader = () => {
         <span
           className="fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("sst")
           }}
         >
@@ -164,7 +153,6 @@ const ProjectsSubHeader = () => {
         <span
           className="fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("tanstack")
           }}
         >
@@ -175,7 +163,6 @@ const ProjectsSubHeader = () => {
         <TbBrandAdobe
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
-            setDropdownOpen(true)
             setHoveredIcon("adobe")
           }}
         />
@@ -183,7 +170,7 @@ const ProjectsSubHeader = () => {
 
       <div className="ml-3 flex w-[90%] items-start">
         <AnimatePresence>
-          {dropdownOpen && (
+          {hoveredIcon && (
             <motion.div
               key="dropdown"
               className="z-40 mt-4 overflow-hidden bg-[#F6F6F6]"
