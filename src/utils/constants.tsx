@@ -89,7 +89,7 @@ export const resume = [
     ],
   },
   {
-    company: "Actualize Coding Bootcamp",
+    company: "Actualize",
     urls: ["https://anyonecanlearntocode.com/"],
     role: "Teaching Assistant & Mentor",
     dates: {
@@ -106,7 +106,7 @@ export const resume = [
     ],
   },
   {
-    company: "Actualize Coding Bootcamp",
+    company: "Actualize (Student)",
     urls: ["https://anyonecanlearntocode.com/"],
     role: "Web Development Student",
     dates: {

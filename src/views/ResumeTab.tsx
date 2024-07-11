@@ -16,7 +16,7 @@ const ResumeTab = () => {
   return (
     <div className="mt-20 flex max-h-[60%] w-1/2 max-w-[720px] flex-col gap-8 overflow-y-scroll bg-blue-500 font-mono">
       {resume.map((r, i) => (
-        <ResumeCard key={i} {...r} />
+        <ResumeCard key={i} resume={r} id={r.company} />
       ))}
     </div>
   )
