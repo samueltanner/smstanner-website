@@ -8,7 +8,7 @@ import { projects, resume } from "@/utils/constants"
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import ProjectsSubHeader from "@/components/ProjectsSubHeader"
-import ProjectCard, { Project } from "@/components/ProjectCard"
+import ProjectCard from "@/components/ProjectCard";
 import { useRouter } from "next/navigation"
 import TabSidebar from "@/components/TabSidebar"
 
@@ -26,7 +26,7 @@ export default function Home() {
     if (selectedTab === "main") {
       router.push("/#main")
     }
-  }, [selectedTab])
+  }, [selectedTab, router])
 
   return (
     <div

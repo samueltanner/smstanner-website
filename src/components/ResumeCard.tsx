@@ -12,6 +12,7 @@ const ResumeCard = ({ resume, id }: { resume: ResumeItem; id: string }) => {
         <span className="flex gap-6">
           {resume.urls.map((url) => (
             <a
+              key={url}
               href={url}
               target="_blank"
               rel="noreferrer"
