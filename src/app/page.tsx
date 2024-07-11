@@ -57,9 +57,9 @@ const MainTab = ({
             literally).
           </p>
           <p>
-            My biggest passion in life is building things. I've built apps for
-            dairy farmers, cookware, chocolate companies, and a whole lot else
-            in between.
+            My biggest passion in life is building things. I&apos;ve built apps
+            for dairy farmers, cookware, chocolate companies, and a whole lot
+            else in between.
           </p>
           <div className="mt-8 flex w-full items-center justify-center">
             <motion.button
@@ -153,10 +153,10 @@ const AboutTab = () => {
         My career (and life) has been pretty darn fun up to this point!
       </p>
       <p>
-        I've worked at a few startups, a few bigger companies, and even started
-        a company or three of my own. My most defining roles have been the ones
-        where I can learn very quickly with a high level of autonomy, and with a
-        team of very smart, creative, and diverse people.
+        I&apos;ve worked at a few startups, a few bigger companies, and even
+        started a company or three of my own. My most defining roles have been
+        the ones where I can learn very quickly with a high level of autonomy,
+        and with a team of very smart, creative, and diverse people.
       </p>
       <p>
         The reason I became an engineer was because I needed a CRM & ERP (fancy
@@ -164,26 +164,27 @@ const AboutTab = () => {
         company. We were producing hundreds of pounds of chocolate per day and
         shipping to REI, Nordstrom, and Whole Foods locations across the
         country. I tried a bunch of out-of-the-box solutions (even got in a
-        legal spat trying to get out of one of those "solutions") and none of
+        legal spat trying to get out of one of those &ldquo;solutions&ldquo;) and none of
         them worked quite right. So I decided to build my own. In doing so, I
         discovered relational databases. To say that changed my life is a bit of
         an understatement.
       </p>
       <p>
         I left my chocolate company to learn how to code and I have been doing
-        that ever since. I've worked on a lot of different projects, but the
-        ones that I am most proud of are the ones that have a direct impact on
-        people's lives. I've built software that helps dairy farmers track their
-        cows' diets, apps that help small businesses automate their bookkeeping
-        with AI, and systems that help multinational organizations protect their
-        datastores from bad actors.
+        that ever since. I&apos;ve worked on a lot of different projects, but
+        the ones that I am most proud of are the ones that have a direct impact
+        on people&apos;s lives. I&apos;ve built software that helps dairy
+        farmers track their cows&apos; diets, apps that help small businesses
+        automate their bookkeeping with AI, and systems that help multinational
+        organizations protect their datastores from bad actors.
       </p>
       <p>
         The thing that makes me most unique as a developer is the fact that I
-        have sat at three different seats at the proverbial table: I've been a
-        CEO of growing companies. I've been a digital designer. And I've been a
-        dev. My less than linear path has given me the tools to understand
-        problems and communicate answers in ways that most people can't.
+        have sat at three different seats at the proverbial table: I&apos;ve
+        been a CEO of growing companies. I&apos;ve been a digital designer. And
+        I&apos;ve been a dev. My less than linear path has given me the tools to
+        understand problems and communicate answers in ways that most people
+        can&apos;t.
       </p>
       <p>
         But thats enough about work stuff. If you want more, check out my

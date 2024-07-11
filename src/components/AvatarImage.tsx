@@ -53,4 +53,6 @@ const AvatarImage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   )
 })
 
+AvatarImage.displayName = "AvatarImage"
+
 export default AvatarImage

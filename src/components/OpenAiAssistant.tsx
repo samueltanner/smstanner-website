@@ -51,7 +51,7 @@ export default function OpenAIAssistant({
     }
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [handleSubmit, prompt])
+  })
 
   useEffect(() => {
     if (!isLoading) {

@@ -20,7 +20,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     if (pathName === "/") {
       router.push("/#main")
     }
-  }, [pathName])
+  }, [pathName, router])
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.substring(1)
