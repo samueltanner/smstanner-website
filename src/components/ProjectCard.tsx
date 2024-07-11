@@ -13,7 +13,7 @@ export type Project = {
 const ProjectCard = ({ project, id }: { project: Project; id: string }) => {
   return (
     <div
-      className="custom-box-shadow-black flex flex-col gap-4 border-4 border-black p-4"
+      className="project-card custom-box-shadow-black flex flex-col gap-4 border-4 border-black p-4"
       id={id}
     >
       <div className="flex flex-col gap-2">
