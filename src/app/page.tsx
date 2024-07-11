@@ -10,14 +10,22 @@ import { motion } from "framer-motion"
 import ProjectsSubHeader from "@/components/ProjectsSubHeader"
 import ProjectsSidebar from "@/components/ProjectsSidebar"
 import ProjectCard, { Project } from "@/components/ProjectCard"
+import { useRouter } from "next/navigation"
 
 export default function Home() {
   const screenRef = useRef<HTMLDivElement>(null)
   const [showAssistant, setShowAssistant] = useState(false)
   const { selectedTab } = useAppContext()
+  const router = useRouter()
 
   useEffect(() => {
-    if (selectedTab !== "main") setShowAssistant(false)
+    if (selectedTab !== "main") {
+      setShowAssistant(false)
+    }
+
+    if (selectedTab === "main") {
+      router.push("/#main")
+    }
   }, [selectedTab])
 
   return (
@@ -34,7 +42,7 @@ export default function Home() {
         {selectedTab === "projects" && <ProjectsTab />}
         {selectedTab === "resume" && <ResumeTab />}
       </div>
-      <div className="absolute bottom-0 left-0 flex h-60 min-h-60 w-full 3xtall:relative">
+      <div className="absolute bottom-0 left-0 flex h-72 min-h-72 w-full 3xtall:relative">
         <AvatarImage ref={screenRef} />
       </div>
     </div>
@@ -164,10 +172,10 @@ const AboutTab = () => {
         company. We were producing hundreds of pounds of chocolate per day and
         shipping to REI, Nordstrom, and Whole Foods locations across the
         country. I tried a bunch of out-of-the-box solutions (even got in a
-        legal spat trying to get out of one of those &ldquo;solutions&ldquo;) and none of
-        them worked quite right. So I decided to build my own. In doing so, I
-        discovered relational databases. To say that changed my life is a bit of
-        an understatement.
+        legal spat trying to get out of one of those &ldquo;solutions&ldquo;)
+        and none of them worked quite right. So I decided to build my own. In
+        doing so, I discovered relational databases. To say that changed my life
+        is a bit of an understatement.
       </p>
       <p>
         I left my chocolate company to learn how to code and I have been doing

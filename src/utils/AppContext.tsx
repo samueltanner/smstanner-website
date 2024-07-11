@@ -1,9 +1,8 @@
 "use client"
-import { usePathname, useRouter } from "next/navigation"
 import { createContext, useContext, useEffect, useState } from "react"
 
 type AppContext = {
-  selectedTab: Tab
+  selectedTab: Tab | undefined
   setSelectedTab: (tab: Tab) => void
 }
 type Tab = "resume" | "projects" | "about" | "main"
@@ -11,16 +10,8 @@ type Tab = "resume" | "projects" | "about" | "main"
 export const AppContext = createContext<AppContext>({} as AppContext)
 
 export const AppProvider = ({ children }: { children: React.ReactNode }) => {
-  const [selectedTab, setSelectedTab] = useState<Tab>("main")
+  const [selectedTab, setSelectedTab] = useState<Tab | undefined>()
 
-  const router = useRouter()
-  const pathName = usePathname()
-
-  useEffect(() => {
-    if (pathName === "/") {
-      router.push("/#main")
-    }
-  }, [pathName, router])
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.substring(1)

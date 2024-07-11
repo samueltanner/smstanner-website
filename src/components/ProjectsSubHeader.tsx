@@ -169,11 +169,11 @@ const ProjectsSubHeader = () => {
               layout="size"
             >
               <motion.div
-                key={"selectedIcon"}
+                key={selectedIcon}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.25 }}
                 className="flex flex-col gap-4 overflow-hidden p-4 text-start leading-8"
               >
                 <span className="flex items-center gap-4">
