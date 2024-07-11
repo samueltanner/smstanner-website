@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import {
   TbBrandAdobe,
   TbBrandAws,
@@ -54,7 +54,7 @@ const descriptionVariants: Variants = {
     height: 4,
     transition: {
       opacity: { duration: 0.5, delay: 1 },
-      width: { duration: 0.5, delay: 0.5 },
+      width: { duration: 0.5, delay: 1 },
       height: { duration: 0.5, delay: 0 },
     },
   },
@@ -65,6 +65,30 @@ const ProjectsSubHeader = () => {
   const [hoveredIcon, setHoveredIcon] = useState<Resource | undefined>(
     undefined,
   )
+  const subHeaderRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleOutside = (e: MouseEvent) => {
+      if (
+        subHeaderRef.current &&
+        !subHeaderRef.current.contains(e.target as Node)
+      ) {
+        console.log("outside")
+        setDropdownOpen(false)
+        setHoveredIcon(undefined)
+      }
+    }
+
+    document.addEventListener("mouseleave", handleOutside)
+    document.addEventListener("pointerleave", handleOutside)
+
+    document.addEventListener("mousedown", handleOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleOutside)
+      document.removeEventListener("mouseleave", handleOutside)
+      document.removeEventListener("pointerleave", handleOutside)
+    }
+  }, [])
 
   return (
     <div
