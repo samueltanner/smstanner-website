@@ -61,7 +61,7 @@ const descriptionVariants: Variants = {
 }
 
 const ProjectsSubHeader = () => {
-  const [hoveredIcon, setHoveredIcon] = useState<Resource | undefined>(
+  const [selectedIcon, setSelectedIcon] = useState<Resource | undefined>(
     undefined,
   )
   const subHeaderRef = useRef<HTMLDivElement>(null)
@@ -73,8 +73,7 @@ const ProjectsSubHeader = () => {
       subHeaderRef.current &&
       !subHeaderRef.current.contains(e.relatedTarget as Node)
     ) {
-      console.log("mouseleave triggered")
-      setHoveredIcon(undefined)
+      setSelectedIcon(undefined)
     }
   }
 
@@ -86,52 +85,52 @@ const ProjectsSubHeader = () => {
         ref={subHeaderRef}
       >
         <TbBrandNextjs
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("next")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "next" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("next")
           }}
         />
         <TbBrandTailwind
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("tailwind")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "tailwind" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("tailwind")
           }}
         />
         <TbBrandTypescript
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("typescript")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "typescript" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("typescript")
           }}
         />
         <TbBrandPython
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("python")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "python" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("python")
           }}
         />
         <TbBrandFramer
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("framer")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "framer" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("framer")
           }}
         />
         <TbBrandAws
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("aws")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "aws" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("aws")
           }}
         />
         <TbBrandGraphql
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("graphql")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "graphql" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("graphql")
           }}
         />
 
         <span
-          className="fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("sst")
+          className={`fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500 ${selectedIcon === "sst" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("sst")
           }}
         >
           <TbLetterS />
@@ -140,9 +139,9 @@ const ProjectsSubHeader = () => {
         </span>
 
         <span
-          className="fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("tanstack")
+          className={`fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500 ${selectedIcon === "tanstack" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("tanstack")
           }}
         >
           <TbLetterT />
@@ -150,46 +149,44 @@ const ProjectsSubHeader = () => {
           <TbLetterN />
         </span>
         <TbBrandAdobe
-          className="fade-in-out size-8 hover:text-red-500"
-          onPointerOver={() => {
-            setHoveredIcon("adobe")
+          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "adobe" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("adobe")
           }}
         />
       </div>
 
       <div className="ml-3 flex w-[90%] items-start">
         <AnimatePresence>
-          {hoveredIcon ? (
+          {selectedIcon && (
             <motion.div
               key="dropdown"
               className="z-40 mt-4 max-w-full overflow-hidden bg-[#F6F6F6]"
               variants={descriptionVariants}
               initial="hidden"
               animate="visible"
-              // animate={hoveredIcon ? "visible" : "exit"}
               exit="exit"
               layout="size"
             >
               <motion.div
-                key={hoveredIcon}
+                key={"selectedIcon"}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
                 className="flex flex-col gap-4 overflow-hidden p-4 text-start leading-8"
-                // layout="size"
               >
                 <span className="flex items-center gap-4">
-                  {resourceObject?.[hoveredIcon]?.icon}
-                  <p className="mt-1">{resourceObject?.[hoveredIcon]?.title}</p>
+                  {resourceObject?.[selectedIcon]?.icon}
+                  <p className="mt-1">
+                    {resourceObject?.[selectedIcon]?.title}
+                  </p>
                 </span>
                 <p className="text-start">
-                  {resourceObject?.[hoveredIcon]?.description}
+                  {resourceObject?.[selectedIcon]?.description}
                 </p>
               </motion.div>
             </motion.div>
-          ) : (
-            <></>
           )}
         </AnimatePresence>
       </div>
