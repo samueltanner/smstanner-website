@@ -66,36 +66,25 @@ const ProjectsSubHeader = () => {
   )
   const subHeaderRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    const handleOutside = (e: MouseEvent) => {
-      if (
-        subHeaderRef.current &&
-        !subHeaderRef.current.contains(e.target as Node)
-      ) {
-        console.log("outside")
-        setHoveredIcon(undefined)
-      }
+  const handleMouseLeave = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>,
+  ) => {
+    if (
+      subHeaderRef.current &&
+      !subHeaderRef.current.contains(e.relatedTarget as Node)
+    ) {
+      console.log("mouseleave triggered")
+      setHoveredIcon(undefined)
     }
-
-    document.addEventListener("mouseleave", handleOutside)
-    document.addEventListener("pointerleave", handleOutside)
-
-    document.addEventListener("mousedown", handleOutside)
-    return () => {
-      document.removeEventListener("mousedown", handleOutside)
-      document.removeEventListener("mouseleave", handleOutside)
-      document.removeEventListener("pointerleave", handleOutside)
-    }
-  }, [])
+  }
 
   return (
-    <div
-      className="relative flex w-full flex-col items-center"
-      onPointerLeave={() => {
-        setHoveredIcon(undefined)
-      }}
-    >
-      <div className="custom-box-shadow flex w-[90%] items-center justify-between gap-6 border-4 border-black px-4 py-2 *:flex-shrink-0">
+    <div className="relative flex w-full flex-col items-center">
+      <div
+        className="custom-box-shadow flex w-[90%] items-center justify-between gap-6 border-4 border-black px-4 py-2 *:flex-shrink-0"
+        onMouseLeave={handleMouseLeave}
+        ref={subHeaderRef}
+      >
         <TbBrandNextjs
           className="fade-in-out size-8 hover:text-red-500"
           onPointerOver={() => {
@@ -170,46 +159,37 @@ const ProjectsSubHeader = () => {
 
       <div className="ml-3 flex w-[90%] items-start">
         <AnimatePresence>
-          {hoveredIcon && (
+          {hoveredIcon ? (
             <motion.div
               key="dropdown"
-              className="z-40 mt-4 overflow-hidden bg-[#F6F6F6]"
+              className="z-40 mt-4 max-w-full overflow-hidden bg-[#F6F6F6]"
               variants={descriptionVariants}
               initial="hidden"
               animate="visible"
+              // animate={hoveredIcon ? "visible" : "exit"}
               exit="exit"
+              layout="size"
             >
-              <AnimatePresence mode="wait">
-                {hoveredIcon && (
-                  <motion.div
-                    key={hoveredIcon}
-                    initial={{ opacity: 1, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 1, height: 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <motion.div
-                      key={hoveredIcon}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.5 }}
-                      className="flex flex-col gap-4 overflow-hidden p-4 text-start leading-8"
-                    >
-                      <span className="flex items-center gap-4">
-                        {resourceObject?.[hoveredIcon]?.icon}
-                        <p className="mt-1">
-                          {resourceObject?.[hoveredIcon]?.title}
-                        </p>
-                      </span>
-                      <p className="text-start">
-                        {resourceObject?.[hoveredIcon]?.description}
-                      </p>
-                    </motion.div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              <motion.div
+                key={hoveredIcon}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col gap-4 overflow-hidden p-4 text-start leading-8"
+                // layout="size"
+              >
+                <span className="flex items-center gap-4">
+                  {resourceObject?.[hoveredIcon]?.icon}
+                  <p className="mt-1">{resourceObject?.[hoveredIcon]?.title}</p>
+                </span>
+                <p className="text-start">
+                  {resourceObject?.[hoveredIcon]?.description}
+                </p>
+              </motion.div>
             </motion.div>
+          ) : (
+            <></>
           )}
         </AnimatePresence>
       </div>
