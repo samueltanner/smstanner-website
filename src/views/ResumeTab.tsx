@@ -1,9 +1,8 @@
-
 import ResumeCard from "@/components/ResumeCard"
 import { resume } from "@/utils/constants"
 export type ResumeItem = {
   company: string
-  url: string
+  urls: string[]
   role: string
   dates: {
     start: string
@@ -15,7 +14,7 @@ export type ResumeItem = {
 }
 const ResumeTab = () => {
   return (
-    <div className="font-mono w-1/2 max-w-[720px] max-h-[60%] overflow-y-scroll mt-20 flex flex-col gap-8 bg-blue-500">
+    <div className="mt-20 flex max-h-[60%] w-1/2 max-w-[720px] flex-col gap-8 overflow-y-scroll bg-blue-500 font-mono">
       {resume.map((r, i) => (
         <ResumeCard key={i} {...r} />
       ))}

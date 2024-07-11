@@ -18,14 +18,14 @@ import {
 export const resume = [
   {
     company: "Ruvos",
-    url: "https://objectvision.ai/",
+    urls: ["https://ruvos.com", "https://objectvision.ai/"],
     role: "Full Stack Engineer",
     dates: {
       start: "May 2023",
       end: "Present",
     },
     location: "Tallahassee, FL",
-    Description:
+    description:
       "At Ruvos I have lead the frontend and portions of the backend development for a multiple projects including ObjectVision, WellConnector, and a Federal and State-level grant application tool.",
     accomplishments: [
       "Leading architecture and frontend development of AI/ML website for finding and applying to federal and state-level grants",
@@ -35,15 +35,33 @@ export const resume = [
     ],
   },
   {
+    company: "SMST Corp.",
+    urls: ["https://smstanner.com"],
+    role: "Design & Development Consultant",
+    dates: {
+      start: "March 2021",
+      end: " Present",
+    },
+    location: "Bend, OR",
+    description:
+      "I formed SMST Corp as a general contracting company for my freelance engineering and digital design work. Within SMST Corp I have brought cookware companies, AI software packages, and non-profit brands to life.",
+    accomplishments: [
+      "Designed brand guidelines for Mesa Cookware, hired industrial designers, managed overseas manufacturing, and launched a multi-product cookware line in B2C and B2B markets",
+      "Rebuilt entire frontend system for Snipr.ai, a DataShapes company, managing project scope, architecture, and development, and brought a brand new product to clients in 6 months",
+      "Completed full brand refresh for PaleoHacks, a B2C health and wellness brand, delivering a brand book complete with new logo, color palette, and typography",
+      "Currently working with the University of Washington to rebrand an international conference focused on the intersection between native peoples and their ecologies",
+    ],
+  },
+  {
     company: "Uplinq",
-    url: "https://www.uplinq.com/",
+    urls: ["https://www.uplinq.com/"],
     role: "Frontend Developer I & II",
     dates: {
       start: "April 2022",
       end: "March 2023",
     },
     location: "Scottsdale, AZ",
-    Description:
+    description:
       "Uplinq automates bookkeeping and financial reporting for small businesses. I was one of two frontend engineers responsible for building and maintaining our frontend application.",
     accomplishments: [
       "Built entire frontend application with one other developer, servicing thousands of enterprise customers",
@@ -54,14 +72,14 @@ export const resume = [
   },
   {
     company: "BoviSync",
-    url: "https://bovisync.com/",
+    urls: ["https://bovisync.com/"],
     role: "Full Stack Web Developer & Project Manager",
     dates: {
       start: "July 2021",
       end: "February 2022",
     },
     location: "Scottsdale, AZ",
-    Description:
+    description:
       "Bovisync is a dairy herd management software that helps dairy farmers track their cows' diets, health, and production. I was responsible for building and maintaining the frontend and backend of the application, as well as managing the development team.",
     accomplishments: [
       "Managed DevOps project that resulted in a 50% decrease of monthly AWSexpenditures, and boosting application reliability and speeds",
@@ -72,14 +90,14 @@ export const resume = [
   },
   {
     company: "Actualize Coding Bootcamp",
-    url: "https://anyonecanlearntocode.com/",
+    urls: ["https://anyonecanlearntocode.com/"],
     role: "Teaching Assistant & Mentor",
     dates: {
       start: "May 2021",
       end: "July 2022",
     },
     location: "Chicago, IL",
-    Description:
+    description:
       "At Actualize I was responsible for helping students learn the fundamentals of web development, and guiding them through the process of building their own web applications.",
     accomplishments: [
       "Taught students how to ideate, architect, and build full stack web applications with CRUD API’s",
@@ -89,14 +107,14 @@ export const resume = [
   },
   {
     company: "Actualize Coding Bootcamp",
-    url: "https://anyonecanlearntocode.com/",
+    urls: ["https://anyonecanlearntocode.com/"],
     role: "Web Development Student",
     dates: {
       start: "January 2021",
       end: "May 2021",
     },
     location: "Chicago, IL",
-    Description:
+    description:
       "At Actualize I learned the fundamentals of web development, building my own full stack applications using Ruby on Rails and VueJS.",
     accomplishments: [
       "Learned fundamentals and best practices in full-stack web development in areas of project architecture, backend, frontend, and how to effectively self-teach new technologies",
@@ -105,14 +123,14 @@ export const resume = [
   },
   {
     company: "Joe Chocolate Co.",
-    url: "https://www.instagram.com/joechocolateco/",
+    urls: ["https://www.instagram.com/joechocolateco/"],
     role: "Co-Founder & CEO",
     dates: {
       start: "March 2018",
       end: "December 2020",
     },
     location: "Seattle, WA",
-    Description:
+    description:
       "Naturally caffeinated dark chocolate. Locally produced, nationally distributed, internationally enjoyed.",
     accomplishments: [
       "Started as a undergraduate class project, grew to a 7-figure ARR business with wholesale, retail, food-service operations",
@@ -123,14 +141,16 @@ export const resume = [
   },
   {
     company: "Caveman Dirtbag Sponsorship",
-    url: "https://www.garagegrowngear.com/blogs/brand-bios/joe-chocolate-co-caffeinated-calories-for-going-the-distance",
+    urls: [
+      "https://www.garagegrowngear.com/blogs/brand-bios/joe-chocolate-co-caffeinated-calories-for-going-the-distance",
+    ],
     role: "Founder",
     dates: {
       start: "March 2018",
       end: "May 2020",
     },
     location: "Seattle, WA",
-    Description:
+    description:
       "A multi-brand collaborative partnership, fueling thru-hikers on the Pacific Crest Trail.",
     accomplishments: [
       "Created business co-op to sponsor thru-hikers on the PCT",
@@ -142,14 +162,14 @@ export const resume = [
   },
   {
     company: "CardSwapper",
-    url: "https://www.crunchbase.com/organization/cardswapper",
+    urls: ["https://www.crunchbase.com/organization/cardswapper"],
     role: "Co-Founder & CEO",
     dates: {
       start: "February 2013",
       end: "June 2016",
     },
     location: "Seattle, WA",
-    Description:
+    description:
       "The world's first peer-to-peer trading platform for unused and unwanted gift cards",
     accomplishments: [
       "Hired and managed team to develop, and launch application gift card trading application on web and iOS app store",
