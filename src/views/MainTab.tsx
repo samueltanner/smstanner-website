@@ -1,4 +1,5 @@
 import OpenAIAssistant from "@/components/OpenAiAssistant"
+import { motion } from "framer-motion"
 
 const MainTab = ({
   showAssistant,
@@ -10,7 +11,7 @@ const MainTab = ({
   return (
     <>
       {!showAssistant && (
-        <div className="flex h-full max-h-[60%] w-1/2 max-w-[720px] flex-col justify-center gap-4 overflow-y-scroll font-mono">
+        <div className="flex h-full w-1/2 max-w-[720px] flex-col justify-center gap-4 overflow-y-scroll font-mono">
           <p className="">Heyyo! My name is Sam Tanner.</p>
           <p>
             I am an engineer but I wear a lot of hats (figuratively and
@@ -22,23 +23,39 @@ const MainTab = ({
             else in between.
           </p>
           <div className="mt-8 flex w-full items-center justify-center">
-            <button
-              onClick={() => setShowAssistant(true)}
-              className="cursor-pointer border-4 border-black px-2 py-1 font-bold"
+            <motion.button
+              initial={{
+                color: "#000",
+                border: "4px solid",
+                position: "relative",
+                padding: "0.25em 0.75em",
+              }}
+              whileHover={{
+                boxShadow:
+                  "1px 1px 0px 0px #ef4444, 2px 2px 0px 0px #ef4444, 3px 3px 0px 0px #ef4444, 4px 4px 0px 0px #ef4444, 5px 5px 0px 0px #ef4444",
+                transition: { duration: 0.1 },
+                transform: "translate(-4px, -5px)",
+              }}
+              whileTap={{
+                boxShadow: "none",
+                transform: "translate(0px, 0px)",
+                transition: { duration: 0.1 },
+              }}
+              onTap={() => {
+                setShowAssistant(true)
+              }}
+              className="font-semibold"
             >
               Ask Me A Question*
-            </button>
+            </motion.button>
           </div>
-          <span className="flex w-full items-center justify-center bg-red-500">
-            <p className="text-[2px]">*Powered by Skynet</p>
+          <span className="flex w-full items-center justify-center">
+            <p className="text-sm">*Powered by Skynet</p>
           </span>
         </div>
       )}
-      {showAssistant && (
-        <div className="mt-20 flex h-full max-h-[60%] w-full justify-center">
-          <OpenAIAssistant showAssistant={true} />
-        </div>
-      )}
+
+      <OpenAIAssistant showAssistant={showAssistant} />
     </>
   )
 }

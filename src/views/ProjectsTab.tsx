@@ -1,34 +1,35 @@
-import ResumeCard from "@/components/ResumeCard"
+import ProjectCard from "@/components/ProjectCard"
+import ProjectsSubHeader from "@/components/ProjectsSubHeader"
 import TabSidebar from "@/components/TabSidebar"
-import { resume } from "@/utils/constants"
+import { projects } from "@/utils/constants"
 import { useEffect, useRef, useState } from "react"
 
-const ResumeTab = () => {
-  const [selectedCompany, setSelectedCompany] = useState<string>("Ruvos")
-  const resumeTitles = resume.map((r) => r.company)
+const ProjectsTab = () => {
+  const projectTitles = projects.map((p) => p.title)
+  const [selectedProject, setSelectedProject] = useState<string>("ObjectVision")
   const containerRef = useRef<HTMLDivElement>(null)
   const sidebarScroll = useRef(false)
   const topHrRef = useRef<HTMLHRElement>(null)
 
-  const handleSidebarClick = (company: string) => {
+  const handleSidebarClick = (project: string) => {
     sidebarScroll.current = true
-    setSelectedCompany(company)
-    const card = document.getElementById(company)
+    setSelectedProject(project)
+    const card = document.getElementById(project)
     card?.scrollIntoView({ behavior: "smooth" })
   }
 
   useEffect(() => {
     const handleScrollEnd = () => {
       sidebarScroll.current = false
-      if (!selectedCompany) {
+      if (!selectedProject) {
         const container = containerRef.current
-        const cards = container?.querySelectorAll(".resume-card")
+        const cards = container?.querySelectorAll(".project-card")
         for (const card of cards!) {
           if (
             card.getBoundingClientRect().top >
             topHrRef.current?.getBoundingClientRect().top!
           ) {
-            setSelectedCompany(card.id)
+            setSelectedProject(card.id)
             return
           }
         }
@@ -37,7 +38,7 @@ const ResumeTab = () => {
 
     const handleScroll = () => {
       if (sidebarScroll.current) return
-      setSelectedCompany("")
+      setSelectedProject("")
     }
 
     containerRef.current?.addEventListener("scrollend", handleScrollEnd)
@@ -47,28 +48,32 @@ const ResumeTab = () => {
       containerRef.current?.removeEventListener("scrollend", handleScrollEnd)
       containerRef.current?.removeEventListener("scroll", handleScroll)
     }
-  }, [selectedCompany])
+  }, [selectedProject])
 
   return (
     <div className="relative flex w-full flex-col items-center gap-8 overflow-hidden p-6 font-mono">
-      <div className="relative flex w-full justify-center gap-8 overflow-y-auto">
+      <div className="absolute flex w-full max-w-[800px]">
+        <ProjectsSubHeader />
+      </div>
+
+      <div className="relative mt-28 flex w-full justify-center gap-8 overflow-y-auto">
         <span className="mt-4 flex w-fit">
           <TabSidebar
-            titles={resumeTitles}
-            selected={selectedCompany}
+            titles={projectTitles}
+            selected={selectedProject}
             setSelected={handleSidebarClick}
           />
         </span>
         <div
-          className="relative flex w-2/3 flex-col gap-4 overflow-y-auto px-4 lg:w-1/2"
+          className="relative flex w-2/3 flex-col gap-4 overflow-y-auto px-4 xl:w-1/2"
           ref={containerRef}
         >
           <hr
             className="sticky top-0 w-full border-2 border-black"
             ref={topHrRef}
           />
-          {resume.map((r, i) => (
-            <ResumeCard key={i} resume={r} id={r.company} />
+          {projects.map((p, i) => (
+            <ProjectCard project={p} key={i} id={p.title} />
           ))}
           <hr className="sticky bottom-0 w-full border-2 border-black" />
         </div>
@@ -77,4 +82,4 @@ const ResumeTab = () => {
   )
 }
 
-export default ResumeTab
+export default ProjectsTab

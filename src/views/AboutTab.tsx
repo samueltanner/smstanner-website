@@ -1,6 +1,6 @@
 const AboutTab = () => {
   return (
-    <div className="mt-20 flex h-fit max-h-[60%] w-1/2 max-w-[720px] flex-col gap-4 overflow-y-scroll font-mono">
+    <div className="flex min-h-0 w-1/2 max-w-[800px] flex-col gap-4 overflow-y-auto p-6 font-mono">
       <p className="">
         My career (and life) has been pretty darn fun up to this point!
       </p>
@@ -16,10 +16,10 @@ const AboutTab = () => {
         company. We were producing hundreds of pounds of chocolate per day and
         shipping to REI, Nordstrom, and Whole Foods locations across the
         country. I tried a bunch of out-of-the-box solutions (even got in a
-        legal spat trying to get out of one of those &ldquo;solutions&ldquo;) and none of
-        them worked quite right. So I decided to build my own. In doing so, I
-        discovered relational databases. To say that changed my life is a bit of
-        an understatement.
+        legal spat trying to get out of one of those &ldquo;solutions&ldquo;)
+        and none of them worked quite right. So I decided to build my own. In
+        doing so, I discovered relational databases. To say that changed my life
+        is a bit of an understatement.
       </p>
       <p>
         I left my chocolate company to learn how to code and I have been doing

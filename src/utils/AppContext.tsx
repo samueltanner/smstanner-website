@@ -5,7 +5,7 @@ type AppContext = {
   selectedTab: Tab | undefined
   setSelectedTab: (tab: Tab) => void
 }
-type Tab = "resume" | "projects" | "about" | "main"
+type Tab = "resume" | "projects" | "about" | "main" | "contact" | "portfolio"
 
 export const AppContext = createContext<AppContext>({} as AppContext)
 

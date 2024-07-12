@@ -143,7 +143,7 @@ export const resume = [
     ],
   },
   {
-    company: "Caveman Dirtbag Sponsorship",
+    company: "Dirtbag Sponsorship",
     urls: [
       "https://www.garagegrowngear.com/blogs/brand-bios/joe-chocolate-co-caffeinated-calories-for-going-the-distance",
     ],
