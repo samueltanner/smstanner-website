@@ -1,5 +1,6 @@
 import useAppContext from "@/utils/AppContext"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 const textAnimation = (translate: number = -2) => {
   return {
@@ -21,6 +22,16 @@ const textAnimation = (translate: number = -2) => {
 
 const NavBar = () => {
   const { setSelectedTab, selectedTab } = useAppContext()
+  const [copied, setCopied] = useState(false)
+
+  useEffect(() => {
+    if (copied) {
+      setTimeout(() => {
+        setCopied(false)
+      }, 2000)
+    }
+  }, [copied])
+
   return (
     <div className="relative flex h-fit w-full flex-col gap-4 font-bold md:flex-row">
       <button onClick={() => setSelectedTab("main")} className="relative">
@@ -34,6 +45,48 @@ const NavBar = () => {
           Sam Tanner
         </motion.h1>
       </button>
+      <span className="*:fade-in-out absolute top-16 flex flex-col items-start gap-2 font-semibold">
+        <span className="flex items-center justify-center gap-2">
+          <button
+            className="hover:text-red-500"
+            onClick={() => {
+              navigator.clipboard.writeText("me@smstanner.com")
+              setCopied(true)
+            }}
+          >
+            me@smstanner.com
+          </button>
+          <AnimatePresence>
+            {copied && (
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.5 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="mt-0.5 text-sm"
+              >
+                Copied!
+              </motion.span>
+            )}
+          </AnimatePresence>
+        </span>
+        <a
+          className="hover:text-red-500"
+          href="https://www.linkedin.com/in/samueltanner"
+          target="_blank"
+          rel="noreferrer"
+        >
+          linkedin.com/in/samueltanner
+        </a>
+        <a
+          className="hover:text-red-500"
+          href="https://www.github.com/samueltanner"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github.com/samueltanner
+        </a>
+      </span>
       <span className="absolute top-16 flex flex-col gap-8 md:right-8 md:top-4 md:flex-row">
         <button
           className="size-fit text-lg"
@@ -93,22 +146,6 @@ const NavBar = () => {
             whileHover="hover"
           >
             Resume
-          </motion.h3>
-        </button>
-        <button
-          className="size-fit text-lg"
-          onClick={() => setSelectedTab("resume")}
-        >
-          <motion.h3
-            className="whitespace-nowrap"
-            variants={textAnimation(-2)}
-            initial="initial"
-            animate={
-              selectedTab === "contact" ? { color: "#ef4444" } : "animate"
-            }
-            whileHover="hover"
-          >
-            Contact
           </motion.h3>
         </button>
       </span>
