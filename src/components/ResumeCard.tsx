@@ -1,4 +1,15 @@
-import { ResumeItem } from "@/views/ResumeTab"
+export type ResumeItem = {
+  role: string
+  company: string
+  location: string
+  dates: {
+    start: string
+    end: string
+  }
+  urls: string[]
+  description: string
+  accomplishments: string[]
+}
 
 const ResumeCard = ({ resume, id }: { resume: ResumeItem; id: string }) => {
   return (

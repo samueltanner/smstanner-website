@@ -1,5 +1,6 @@
 import { Project } from "@/components/ProjectCard"
 import { Resource } from "@/components/ProjectsSubHeader"
+import { ResumeItem } from "@/components/ResumeCard"
 import {
   TbBrandAdobe,
   TbBrandAws,
@@ -15,7 +16,7 @@ import {
   TbLetterT,
 } from "react-icons/tb"
 
-export const resume = [
+export const resume: ResumeItem[] = [
   {
     company: "Ruvos",
     urls: ["https://ruvos.com", "https://objectvision.ai/"],
