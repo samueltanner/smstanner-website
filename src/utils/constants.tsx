@@ -24,14 +24,15 @@ export const resume = [
       start: "May 2023",
       end: "Present",
     },
-    location: "Tallahassee, FL",
+    location: "Tallahassee, FL (Remote)",
     description:
-      "At Ruvos I have lead the frontend and portions of the backend development for a multiple projects including ObjectVision, WellConnector, and a Federal and State-level grant application tool.",
+      "At Ruvos I have lead the frontend and portions of the backend development for a multiple projects including ObjectVision, WellConnector, GrantGetter.",
     accomplishments: [
       "Leading architecture and frontend development of AI/ML website for finding and applying to federal and state-level grants",
       "Led development of ObjectVision (OVAI), an anomaly detection application used to monitor AWS resources for large agencies eg. AIMS (APHL)",
       "Built system capable of real-time anomaly detection in a data stream of millions of events per day using OpenSearch, GraphQL, AppSync, Kinesis,EventBridge, DynamoDB, and Lambda (NodeJS & Python)",
-      "Designed, built, and deployed ObjectVision frontend using NextJS,TailwindCSS, Cognito, FramerMotion, ReactQuery, and MakUi",
+      "Designed, built, and deployed ObjectVision frontend using NextJS, TailwindCSS, Cognito, FramerMotion, TanStack, and ReactFlow",
+      "Managed deployments and infrastructure using SST, CloudFormation, and AWS SDK",
     ],
   },
   {
@@ -60,7 +61,7 @@ export const resume = [
       start: "April 2022",
       end: "March 2023",
     },
-    location: "Scottsdale, AZ",
+    location: "Scottsdale, AZ (Remote)",
     description:
       "Uplinq automates bookkeeping and financial reporting for small businesses. I was one of two frontend engineers responsible for building and maintaining our frontend application.",
     accomplishments: [
@@ -78,7 +79,7 @@ export const resume = [
       start: "July 2021",
       end: "February 2022",
     },
-    location: "Scottsdale, AZ",
+    location: "Fond du Lac, WI (Remote)",
     description:
       "Bovisync is a dairy herd management software that helps dairy farmers track their cows' diets, health, and production. I was responsible for building and maintaining the frontend and backend of the application, as well as managing the development team.",
     accomplishments: [
@@ -96,7 +97,7 @@ export const resume = [
       start: "May 2021",
       end: "July 2022",
     },
-    location: "Chicago, IL",
+    location: "Chicago, IL (Remote)",
     description:
       "At Actualize I was responsible for helping students learn the fundamentals of web development, and guiding them through the process of building their own web applications.",
     accomplishments: [
@@ -113,7 +114,7 @@ export const resume = [
       start: "January 2021",
       end: "May 2021",
     },
-    location: "Chicago, IL",
+    location: "Chicago, IL (Remote)",
     description:
       "At Actualize I learned the fundamentals of web development, building my own full stack applications using Ruby on Rails and VueJS.",
     accomplishments: [
@@ -134,9 +135,11 @@ export const resume = [
       "Naturally caffeinated dark chocolate. Locally produced, nationally distributed, internationally enjoyed.",
     accomplishments: [
       "Started as a undergraduate class project, grew to a 7-figure ARR business with wholesale, retail, food-service operations",
-      "Custom built majority of SquareSpace website using CSS, HTML, and vanillaJSBuilt and maintained CRM, fulfillment, and sales forecasting system usingAirTable and other GUI relational databases",
+      "Custom built majority of SquareSpace website using CSS, HTML, and vanillaJS",
+      "Built and maintained CRM, fulfillment, and sales forecasting system using AirTable and other GUI relational databases",
       "Drove wholesale business using my own CRM platform, enabling nation-wide fulfillment to retailers like Whole Foods, REI, and Nordstrom",
-      "Managed wholesale and retail operations, employing over 20 staff membersOversaw construction and opened retail facility in Pike Place Market, serving50K+ customers per year",
+      "Managed wholesale and retail operations, employing over 20 staff membersOversaw construction and opened retail facility in Pike Place Market, serving 50K+ customers per year",
+      "Raised over $1.6M in funding from private and institutional investors",
     ],
   },
   {
@@ -154,10 +157,10 @@ export const resume = [
       "A multi-brand collaborative partnership, fueling thru-hikers on the Pacific Crest Trail.",
     accomplishments: [
       "Created business co-op to sponsor thru-hikers on the PCT",
-      "Partnered with Patagonia Seattle, Arc'teryx, Enlightened Equipment, and other outdoor brands",
+      "Partnered with Patagonia, Arc'teryx, Enlightened Equipment, and other outdoor brands to provide ultra-light necessities and food to thru-hikers",
       "Selected 2-4 hikers each year to receive cash, gear, and food in care-packages",
       "Recognized as preeminent sponsorship amongst thru-hikers and received hundreds of applications each year",
-      "Sponsored hikers from countries including Brazil, New Zealand, and Israel",
+      "Sponsored hikers from countries including Brazil, New Zealand, Israel, and the United States",
     ],
   },
   {
@@ -176,6 +179,7 @@ export const resume = [
       "Raised seed funding from Jones + Foster Accelerator and from private investors",
       "Wrote, submitted, and received patent from the United States Patent andTrademark Office for novel methods of digital gift card exchange",
       "Partnered with nations largest gift card liquidation platform to launch cash-for-cards feature",
+      "Designed, wireframed, and managed implementation of UI/UX for web and mobile applications",
     ],
   },
 ]
