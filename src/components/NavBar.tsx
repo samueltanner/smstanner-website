@@ -87,7 +87,7 @@ const NavBar = () => {
           github.com/samueltanner
         </a>
       </span> */}
-      <span className="top-16 flex flex-wrap gap-2 lg:gap-8">
+      <span className="top-16 flex flex-wrap gap-3 lg:gap-8">
         <button
           className="size-fit text-sm lg:text-lg"
           onClick={() => setSelectedTab("main")}

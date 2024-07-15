@@ -51,7 +51,7 @@ export default function RootLayout({
         <link href="/images/sam-just-head.svg" rel="icon" />
       </head>
       <body
-        className={`${lufga.className} ${GeistMono.variable} relative flex h-screen w-screen flex-col overflow-hidden bg-[#F6F6F6] p-8 lg:p-16`}
+        className={`${lufga.className} ${GeistMono.variable} relative flex h-[calc(100dvh)] w-screen flex-col overflow-hidden bg-[#F6F6F6] p-8 lg:p-16`}
       >
         <Providers>{children}</Providers>
       </body>

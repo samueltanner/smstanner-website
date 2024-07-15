@@ -22,7 +22,7 @@ const MainTab = ({
             for dairy farmers, cookware, chocolate companies, and a whole lot
             else in between.
           </p>
-          <div className="mt-8 flex w-full items-center justify-center">
+          <div className="mt-2 3xtall:mt-8 flex w-full items-center justify-center">
             <motion.button
               initial={{
                 color: "#000",

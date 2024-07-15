@@ -44,7 +44,7 @@ export default function Home() {
         {selectedTab === "projects" && <ProjectsTab />}
         {selectedTab === "resume" && <ResumeTab />}
       </div>
-      <div className="bottom-0 left-0 flex h-44 min-h-44 w-full lg:h-72 lg:min-h-72 3xtall:relative">
+      <div className="bottom-0 left-0 flex h-36 min-h-36 w-full lg:h-72 lg:min-h-72 3xtall:relative">
         <AvatarImage ref={screenRef} />
       </div>
     </div>
