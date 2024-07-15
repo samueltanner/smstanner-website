@@ -46,7 +46,7 @@ const AvatarImage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   }, [selectedTab, ref, height])
 
   return (
-    <div className="flex h-full w-full justify-start 3xtall:justify-center">
+    <div className="flex h-full w-full justify-center">
       <AnimatePresence mode="wait">
         <motion.span
           key={selectedTab}

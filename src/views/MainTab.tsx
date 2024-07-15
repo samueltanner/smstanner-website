@@ -11,7 +11,7 @@ const MainTab = ({
   return (
     <>
       {!showAssistant && (
-        <div className="flex h-full w-1/2 max-w-[720px] flex-col justify-center gap-4 overflow-y-scroll font-mono">
+        <div className="flex h-full lg:w-1/2 max-w-[720px] flex-col lg:justify-center gap-4 overflow-y-scroll font-mono">
           <p className="">Heyyo! My name is Sam Tanner.</p>
           <p>
             I am an engineer but I wear a lot of hats (figuratively and

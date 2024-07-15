@@ -1,6 +1,6 @@
 const AboutTab = () => {
   return (
-    <div className="flex min-h-0 w-1/2 max-w-[800px] flex-col gap-4 overflow-y-auto p-6 font-mono">
+    <div className="flex min-h-0 lg:w-1/2 max-w-[800px] flex-col gap-4 overflow-y-auto p-6 font-mono">
       <p className="">
         My career (and life) has been pretty darn fun up to this point!
       </p>

@@ -80,7 +80,7 @@ const ProjectsSubHeader = () => {
   return (
     <div className="relative flex w-full flex-col items-center">
       <div
-        className="custom-box-shadow flex w-[90%] items-center justify-between gap-6 border-4 border-black px-4 py-2 *:flex-shrink-0"
+        className="custom-box-shadow flex w-[90%] items-center justify-between gap-6 border-4 border-black px-4 py-2 *:flex-shrink-0 *:cursor-pointer overflow-x-auto"
         onMouseLeave={handleMouseLeave}
         ref={subHeaderRef}
       >
@@ -156,7 +156,7 @@ const ProjectsSubHeader = () => {
         />
       </div>
 
-      <div className="ml-3 flex w-[90%] items-start">
+      <div className="absolute top-12 ml-3 flex w-[90%] items-start">
         <AnimatePresence>
           {selectedIcon && (
             <motion.div

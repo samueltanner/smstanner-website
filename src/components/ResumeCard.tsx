@@ -20,7 +20,7 @@ const ResumeCard = ({ resume, id }: { resume: ResumeItem; id: string }) => {
       <div className="flex flex-col gap-2">
         <h2 className="font-extrabold">{resume.role}</h2>
         <h3 className="font-semibold">{resume.company}</h3>
-        <span className="flex gap-6">
+        <span className="flex flex-wrap gap-4 overflow-hidden">
           {resume.urls.map((url) => (
             <a
               key={url}
@@ -29,7 +29,10 @@ const ResumeCard = ({ resume, id }: { resume: ResumeItem; id: string }) => {
               rel="noreferrer"
               className="text-red-500"
             >
+              <p className="break-all">
+
               {url}
+              </p>
             </a>
           ))}
         </span>

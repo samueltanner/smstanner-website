@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import AvatarImage from "@/components/AvatarImage"
 import NavBar from "@/components/NavBar"
 import useAppContext from "@/utils/AppContext"
@@ -30,10 +30,10 @@ export default function Home() {
       ref={screenRef}
       className="relative flex h-full w-full flex-col items-center gap-0 overflow-hidden"
     >
-      <div className="flex h-fit w-full">
+      <div className="h-fit w-full lg:flex">
         <NavBar />
       </div>
-      <div className="mt-16 flex min-h-0 w-full flex-grow justify-center">
+      <div className="mt-8 flex min-h-0 w-full flex-grow justify-center lg:mt-16">
         {selectedTab === "main" && (
           <MainTab
             showAssistant={showAssistant}
@@ -44,7 +44,7 @@ export default function Home() {
         {selectedTab === "projects" && <ProjectsTab />}
         {selectedTab === "resume" && <ResumeTab />}
       </div>
-      <div className="absolute bottom-0 left-0 flex h-72 min-h-72 w-full 3xtall:relative">
+      <div className="bottom-0 left-0 flex h-44 min-h-44 w-full lg:h-72 lg:min-h-72 3xtall:relative">
         <AvatarImage ref={screenRef} />
       </div>
     </div>

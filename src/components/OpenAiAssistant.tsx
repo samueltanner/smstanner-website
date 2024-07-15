@@ -142,7 +142,7 @@ export default function OpenAIAssistant({
   }
 
   return showAssistant ? (
-    <div className="relative my-20 flex w-1/2 max-w-[800px] justify-center">
+    <div className="relative flex max-w-[800px] lg:mt-20 lg:w-1/2 lg:justify-center">
       <div
         className="flex h-full flex-col gap-8 overflow-y-auto pb-16"
         ref={contentRef}

@@ -51,13 +51,13 @@ const ProjectsTab = () => {
   }, [selectedProject])
 
   return (
-    <div className="relative flex w-full flex-col items-center gap-8 overflow-hidden p-6 font-mono">
-      <div className="absolute flex w-full max-w-[800px]">
+    <div className="relative flex w-full flex-col items-center gap-8 overflow-hidden font-mono lg:p-6">
+      <div className="flex w-full lg:max-w-[800px]">
         <ProjectsSubHeader />
       </div>
 
-      <div className="relative mt-28 flex w-full justify-center gap-8 overflow-y-auto">
-        <span className="mt-4 flex w-fit">
+      <div className="relative flex w-full lg:justify-center gap-8 overflow-y-auto">
+        <span className="mt-4 hidden w-fit lg:flex">
           <TabSidebar
             titles={projectTitles}
             selected={selectedProject}
@@ -65,7 +65,7 @@ const ProjectsTab = () => {
           />
         </span>
         <div
-          className="relative flex w-2/3 flex-col gap-4 overflow-y-auto px-4 xl:w-1/2"
+          className="relative flex flex-col gap-4 overflow-y-auto px-4 lg:w-2/3 xl:w-1/2"
           ref={containerRef}
         >
           <hr

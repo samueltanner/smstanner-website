@@ -33,7 +33,7 @@ const NavBar = () => {
   }, [copied])
 
   return (
-    <div className="relative flex h-fit w-full flex-col gap-4 font-bold md:flex-row">
+    <div className="relative flex h-fit w-full flex-col items-center justify-between gap-4 font-bold md:flex-row">
       <button onClick={() => setSelectedTab("main")} className="relative">
         <motion.h1
           className="text-start font-sans text-4xl"
@@ -45,7 +45,7 @@ const NavBar = () => {
           Sam Tanner
         </motion.h1>
       </button>
-      <span className="*:fade-in-out absolute top-16 flex flex-col items-start gap-2 font-semibold">
+      {/* <span className="hidden *:fade-in-out absolute top-16 lg:flex flex-col items-start gap-2 font-semibold">
         <span className="flex items-center justify-center gap-2">
           <button
             className="hover:text-red-500"
@@ -86,10 +86,10 @@ const NavBar = () => {
         >
           github.com/samueltanner
         </a>
-      </span>
-      <span className="absolute top-16 flex flex-col gap-8 md:right-8 md:top-4 md:flex-row">
+      </span> */}
+      <span className="top-16 flex flex-wrap gap-2 lg:gap-8">
         <button
-          className="size-fit text-lg"
+          className="size-fit text-sm lg:text-lg"
           onClick={() => setSelectedTab("main")}
         >
           <motion.h3
@@ -103,7 +103,7 @@ const NavBar = () => {
           </motion.h3>
         </button>
         <button
-          className="size-fit text-lg"
+          className="size-fit text-sm lg:text-lg"
           onClick={() => setSelectedTab("about")}
         >
           <motion.h3
@@ -117,7 +117,7 @@ const NavBar = () => {
           </motion.h3>
         </button>
         <button
-          className="size-fit text-lg"
+          className="size-fit text-sm lg:text-lg"
           onClick={() => setSelectedTab("projects")}
         >
           <motion.h3
@@ -133,7 +133,7 @@ const NavBar = () => {
           </motion.h3>
         </button>
         <button
-          className="size-fit text-lg"
+          className="size-fit text-sm lg:text-lg"
           onClick={() => setSelectedTab("resume")}
         >
           <motion.h3
