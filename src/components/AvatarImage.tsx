@@ -23,7 +23,7 @@ const AvatarImage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
     if (!ref || !(ref as React.MutableRefObject<HTMLDivElement>).current) return
 
     const updateImagePath = (e?: MouseEvent) => {
-      const denominator = height > 1400 ? 2 : 5
+      const denominator = 2
       const screenWidth = window.innerWidth
       const cursorX = e?.clientX ?? screenWidth / denominator
       const cursorSide = cursorX < screenWidth / denominator ? "left" : "right"
