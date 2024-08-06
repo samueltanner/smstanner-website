@@ -15,7 +15,7 @@ interface Message {
 
 export default function OpenAIAssistant({
   assistantId = "",
-  greeting = "I am a GPT Assistant Trained on Sam! What can I help you with? I am trained on Sam but I can't guarantee I'm always correct.",
+  greeting = "I am a GPT Assistant Trained on Sam! What can I help you with? I'll try to be correct but I can't guarantee it.",
   showAssistant,
 }: {
   assistantId?: string
@@ -222,7 +222,7 @@ export function OpenAIAssistantMessage({ message }: { message: Message }) {
   return (
     <div
       className={`flex gap-2 ${
-        message.role === "user" ? "flex-row-reverse" : ""
+        message.role === "user" ? "flex-row-reverse px-4" : ""
       }`}
     >
       <div className="">{displayRole(message.role)}</div>
