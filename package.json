@@ -18,7 +18,7 @@
     "react-dom": "^18",
     "react-icons": "^5.2.1",
     "react-markdown": "^9.0.1",
-    "sst": "ion",
+    "sst": "^3.1.61",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {

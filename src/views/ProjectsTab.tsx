@@ -6,7 +6,9 @@ import { useEffect, useRef, useState } from "react"
 
 const ProjectsTab = () => {
   const projectTitles = projects.map((p) => p.title)
-  const [selectedProject, setSelectedProject] = useState<string>("ObjectVision")
+  const [selectedProject, setSelectedProject] = useState<string>(
+    "WHO Pandemic Simulator",
+  )
   const containerRef = useRef<HTMLDivElement>(null)
   const sidebarScroll = useRef(false)
   const topHrRef = useRef<HTMLHRElement>(null)
@@ -56,7 +58,7 @@ const ProjectsTab = () => {
         <ProjectsSubHeader />
       </div>
 
-      <div className="relative flex w-full lg:justify-center gap-8 overflow-y-auto">
+      <div className="relative flex w-full gap-8 overflow-y-auto lg:justify-center">
         <span className="mt-4 hidden w-fit lg:flex">
           <TabSidebar
             titles={projectTitles}

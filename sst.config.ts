@@ -9,7 +9,12 @@ export default $config({
     }
   },
   async run() {
+    const domain = "smstanner.com"
     new sst.aws.Nextjs("SMSTanner", {
+      domain: {
+        name: domain,
+        aliases: [`www.${domain}`],
+      },
       environment: {
         OPENAI_API_KEY: process.env.OPENAI_API_KEY as string,
         ASSISTANT_ID: process.env.ASSISTANT_ID as string,

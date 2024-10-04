@@ -3,7 +3,12 @@ import TabSidebar from "@/components/TabSidebar"
 import { resume } from "@/utils/constants"
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb"
+import {
+  TbBrandGithub,
+  TbBrandLinkedin,
+  TbFileDownload,
+  TbMail,
+} from "react-icons/tb"
 
 const ResumeTab = () => {
   const [selectedCompany, setSelectedCompany] = useState<string>("Ruvos")
@@ -83,7 +88,7 @@ const ResumeTab = () => {
           <div className="custom-box-shadow-black top-16 flex flex-col items-start gap-2 break-all border-4 border-black p-4 font-semibold *:fade-in-out">
             <span className="flex items-center justify-center gap-2">
               <button
-                className="flex items-center gap-2 hover:text-red-500"
+                className="flex items-center gap-2 fade-in-out hover:text-red-500"
                 onClick={() => {
                   navigator.clipboard.writeText("me@smstanner.com")
                   setCopied(true)
@@ -101,7 +106,7 @@ const ResumeTab = () => {
                     transition={{ duration: 0.3 }}
                     className="mt-0.5 text-sm"
                   >
-                    Copied!
+                    Copied to clipboard!
                   </motion.span>
                 )}
               </AnimatePresence>
@@ -124,6 +129,16 @@ const ResumeTab = () => {
               <TbBrandGithub className="flex size-5 flex-shrink-0" />
               <p>samueltanner</p>
             </a>
+            <button className="flex items-center gap-2 fade-in-out hover:text-red-500"
+              onClick={() => {
+                window.open("/SamTannerResume.pdf")
+              }}
+            >
+              <TbFileDownload className="flex size-5 flex-shrink-0" />
+              <p>
+                Download my resume
+              </p>
+            </button>
           </div>
 
           {resume.map((r, i) => (

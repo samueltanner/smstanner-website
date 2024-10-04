@@ -27,13 +27,12 @@ export const resume: ResumeItem[] = [
     },
     location: "Tallahassee, FL (Remote)",
     description:
-      "At Ruvos I have lead the frontend and portions of the backend development for a multiple projects including ObjectVision, WellConnector, GrantGetter.",
+      "At Ruvos I have led the full-stack development of multiple novel applications including, ObjectVision (real-time S3 anomaly detection), GrantGetter (a federal & state-level grant-finding tool), and an AI/ML disease simulator in partnership with the World Health Organization.",
     accomplishments: [
-      "Leading architecture and frontend development of AI/ML website for finding and applying to federal and state-level grants",
-      "Led development of ObjectVision (OVAI), an anomaly detection application used to monitor AWS resources for large agencies eg. AIMS (APHL)",
-      "Built system capable of real-time anomaly detection in a data stream of millions of events per day using OpenSearch, GraphQL, AppSync, Kinesis,EventBridge, DynamoDB, and Lambda (NodeJS & Python)",
-      "Designed, built, and deployed ObjectVision frontend using NextJS, TailwindCSS, Cognito, FramerMotion, TanStack, and ReactFlow",
-      "Managed deployments and infrastructure using SST, CloudFormation, and AWS SDK",
+      "Led full-stack web development of and deployment of four applications using NextJ, Typescript, FramerMotion, Tailwind, Python, AWS, SST, and OpenAi, delivering pixel-perfect UIs, authenticated with custom identity provider solutions, and connected to multiple scalable backend environments.",
+      "Utilized OpenAi’s Assistant API and Python Lambdas to extract and inject third party documents into vector stores, implemented GPT-4o models into frontend applications with custom AI chat interface, allowing users to query specific document information across multiple files in realtime",
+      "Mentored and managed daily work of engineering intern, teaching best-practices in Infrastructure as Code, tokenized security systems, GraphQL API layers, and core AWS resources",
+      "Built full-stack anomaly detection system using Kinesis, Python Lambdas, and Pandas enabling near-realtime monitoring of S3 assets, capable of processing hundreds of millions of events per hour in a multi-tenant environment",
     ],
   },
   {
@@ -268,6 +267,27 @@ export const resourceObject: {
 
 export const projects: Project[] = [
   {
+    title: "WHO Pandemic Simulator",
+    sub_title: "AI/ML Disease Simulation for the World Health Organization",
+    url: "<still in development>",
+    frontend_stack: ["NextJS", "TailwindCSS", "Framer Motion", "MapBox"],
+    backend_stack: [
+      "GraphQL",
+      "AppSync",
+      "DynamoDB",
+      "Lambda (NodeJS & Python)",
+      "Cognito",
+      "SST V3 & V2",
+      "SageMaker",
+    ],
+    role: "Lead Full Stack Engineer",
+    description:
+      "The WHO Pandemic Simulator (WHO PANSIM) is a collaboration between Ruvos, John Hopkins University, and the World Health Organization. The goal of this project is to build a real-time disease simulation tool that can be used to predict the spread of infectious diseases, and to help governments and health organizations make informed decisions about how to respond to pandemics. The tool uses AI/ML models to simulate the spread of diseases based on a variety of factors, including population density, travel patterns, and the effectiveness of public health interventions.",
+    magic:
+      "We've all played Plague Inc. and watched Contagion, but the WHO Pandemic Simulator is the real deal. The models we are building are based on real-world data, and will be used by real-world organizations to make critical decisions that will affect billions of people. It's a huge responsibility, but also an incredible opportunity to use cutting-edge technology that will, quite literally, save lives.",
+    affiliation: "Ruvos",
+  },
+  {
     title: "ObjectVision",
     sub_title: "Real-Time Anomaly Detection for AWS S3 Buckets",
     url: "https://objectvision.ai/",
@@ -287,7 +307,7 @@ export const projects: Project[] = [
       "DynamoDB",
       "Lambda (NodeJS & Python)",
       "Cognito",
-      "SST",
+      "SST V2",
     ],
     role: "Lead Full Stack Engineer & Architect",
     description:
@@ -299,7 +319,7 @@ export const projects: Project[] = [
   {
     title: "GrantGetter",
     sub_title: "A Grant Finding and Application Tool",
-    url: "<still in development>",
+    url: "https://www.grantgetter.net/",
     frontend_stack: [
       "NextJS",
       "TailwindCSS",
@@ -311,9 +331,10 @@ export const projects: Project[] = [
       "GraphQL",
       "AppSync",
       "DynamoDB",
+      "OpenSearch",
       "Lambda (Python)",
       "Cognito",
-      "SST",
+      "SST V2",
     ],
     role: "Lead Full Stack Engineer & Architect",
     description:
@@ -321,6 +342,25 @@ export const projects: Project[] = [
     magic:
       "The magic of GrantGetter is the models we are building that are able to categorize users and grants based on a variety of factors, and then match them based on their compatibility. This gives users a much broader, yet personalized, feed of grants that they are eligible for, and a much more streamlined application process.",
     affiliation: "Ruvos",
+  },
+  {
+    title: "RIEL Brand & Website",
+    sub_title:
+      "Brand redesign and website build for an international conference hosted by the University of Washington",
+    url: "https://www.inihkd.com",
+    frontend_stack: ["NextJS", "TailwindCSS", "Framer Motion"],
+    backend_stack: [
+      "SST V3",
+      "CloudFront",
+      "ACM (Certificate Manager)",
+      "Route53",
+    ],
+    role: "Digital Designer & Developer",
+    description:
+      "The University of Washington's International Network of Indigenous Health Knowledge and Development (INIHKD) and Indigenous Wellness Research Institute (IWRI) host an international conference that brings together indigenous peoples, scholars, and policymakers to discuss the intersection between native peoples and their native ecologies. I was responsible for redesigning the conference's brand and building a new website to promote the 2025 conference.",
+    magic:
+      "Getting to consult, design, and build an entire brand presence for an international conference was extremely fulfilling. So often, people feel stuck with the limited options available to them with out-of-the-box website solutions. I was able to create a gorgeous brand and pixel-perfect website that was completely unique and a true reflection of the conference's mission and the people who will attend.",
+    affiliation: "University of Washington",
   },
   {
     title: "Snipr.ai",
@@ -334,7 +374,7 @@ export const projects: Project[] = [
       "RDS",
       "S3",
       "Cognito",
-      "SST",
+      "SST V2",
       "AWS Rekognition",
       "AWS Transcribe",
     ],
