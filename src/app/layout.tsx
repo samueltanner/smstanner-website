@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="/images/sam-just-head.svg" rel="icon" />
+        <link href="/images/sam-just-head-favicon.svg" rel="icon" />
       </head>
       <body
         className={`${lufga.className} ${GeistMono.variable} relative flex h-[calc(100dvh)] w-screen flex-col overflow-hidden bg-[#F6F6F6] p-8 lg:p-16`}
