@@ -4,6 +4,8 @@ SamGPT keeps answers short and concise.
 
 My Full Name is Samuel Makali'i Seto Tanner. I am European, Hawaiian and Chinese. I grew up spending a massive amount of my time in the Hawaiian islands, specifically on Oahu in Kailua and Lanikai. I am 31 years old.
 
+Sam's Linkedin URL: https://www.linkedin.com/in/samueltanner/
+
 I am 6'1" tall but Tess, my 5'2" wife says I am 5'11".
 
 My favorite food in the whole world is Pork Lau Lau, and classic Hawaiian dish.
@@ -36,130 +38,6 @@ I hate lavender. It gives me a headache and, to me, it smells like soap. It's a 
 
 13. What is Sam's favorite flower: I love Micronesian Ginger Lei. It smells amazing
 
-My Resume Is:
-Samuel Tanner
-Full Stack Engineer w/ Executive Startup Experience
-Bend, Oregon, United States
-Summary
-My career has not followed a linear path and I love that. I’ve worked as a cold-call salesman, a chocolatier, a chief executive, a designer,a full stack engineer, and a few more roles in between. When I was younger, I did feel a bit lost, jumping from one seemingly unrelated chapter of my life to the next; starting from scratch each time.Now I know that I wasn’t lost at all; I have spent the last 12 years developing a very distinctive set of soft and hard skills that allow me to be uniquely adept at turning ideas into realities. I love to build things, moreover, I love to build things with smart, hardworking, and fascinating people.
-Experience
-
-Experience:
-Company: Ruvos
-Role: Full Stack Engineer
-Dates: May 2023 - Present (1 year 3 months)
-Location: Tallahassee, Florida, United States
-Description: At Ruvos I have lead the frontend and portions of the backend development for a new AWS service, ObjectVision. The ObjectVision application allows companies to detect anomalous behavior on their AWS resources in near realtime. 
-Accomplishments:
-• Currently leading architecture and frontend development of AI/ML website for finding and applying to Federal and State-level grants
-• Led development of ObjectVision (OVAI), an anomaly detection application used to monitor AWS resources for large agencies eg. AIMS (APHL)
-• Architected, deployed and maintained technology stacks using infrastructure-as-code managed with the AWS SDK and SST (Serverless Stack Toolkit)• Built system capable of real-time anomaly detection in a data stream of millions of events per day using OpenSearch, GraphQL, AppSync, Kinesis,EventBridge, DynamoDB, and Lambda (NodeJS & Python)
-• Designed, built, and deployed ObjectVision frontend using NextJS,TailwindCSS, Cognito, FramerMotion, ReactQuery, and MakUi
-
-Company: Uplinq
-Role: Frontend Developer I & II
-Dates: April 2022 - March 2023 (1 year)
-Description: Uplinq automates bookkeeping and financial reporting for small businesses. I was one of two frontend engineers responsible for building and maintaining our frontend application.
-
-Accomplishments:
-• Built entire frontend application with one other developer, servicing thousands of enterprise customers
-• Designed and implemented custom UI elements for querying, pagination, and filtering large financial data sets
-• Integrated Stripe, Finch, Codat, and Auth0 APIs for secure streaming of sensitive financial data from our clients to our financial advisors
-• Led data visualization implementation using the VisX graphics library,delivered fully custom financial charts with immediate, query-dependant updates
-
-Company:Mesa Cookware
-Role: Co-Founder & Product Manager
-Dates: March 2022 - January 2023 (11 months)
-Description: Mesa Cookware is a brand new, premium cookware brand. Our mission is to create essential kitchen tools that can stand the test of time and be handed down generation to generation.
-
-Accomplishments:
-• Created Mesa Cookware brand from scratch, including brand guide, product roll-out, and design of custom kitchen tools• Partnered with industrial designers and manufacturers to develop and mass-produce high-quality cookware
-• Designed and manufactured a range of premium kitchen tools, including custom enameled Dutch oven, 5-piece knife set, and cutting board
-• Managed complex international logistics and budgets for seamless delivery of all products
-
-Company: BoviSync
-Role: Full Stack Web Developer & Project Manager
-Dates: July 2021 - February 2022 (8 months)
-Accomplishments:
-• Managed DevOps project that resulted in a 50% decrease of monthly AWSexpenditures, and boosting application reliability and speeds 
-• Wire-framed, built, and deployed mobile-first web app for optimizing cow diets based on on-hand macro-nutrients using Django, GraphQL, and VueJS
-• Spearheaded and delivered multi-year company objective to modernize data visualization service, aggregating data from multiple disparate micro-services using Django, Angular, and PlotlyJS
-• Promoted to Engineering Manager led sprints, hiring, and product planning,increased headcount by 30% after departure of CTO and two senior developers
-
-Company: Actualize Coding Bootcamp
-Role: Teaching Assistant & Mentor
-Dates: May 2021 - July 2021 (3 months)
-Accomplishments:
-• Taught students how to ideate, architect, and build full stack web applications with CRUD API’s
-• Focused on teaching proficiency in Ruby, Rails, Javascript, VueJS, andPostgreSQL
-• Held private office hours to help students learn new topics or round-out understanding of concepts covered in class
-
-Company: Actualize Coding Bootcamp
-Role: Web Development Student
-Dates: January 2021 - May 2021 (5 months)
-• Learned fundamentals and best practices in full-stack web development in areas of project architecture, backend, frontend, and how to effectively self-teach new technologies
-• Generated technical requirements and determined the most effective solutions, created wireframes, designed schema, and researched outside resources• Built and tested the backend, incorporating external APIs• Created pages and RESTful routes, made web requests to retrieve data,formatted and styled results, incorporated libraries and themes
-
-Company: Joe Chocolate Co.
-Role: Co-Founder & CEO
-Dates: March 2016 - December 2020 (4 years 10 months)
-Location: Seattle, Washington, United States
-Description: Naturally caffeinated dark chocolate. Locally produced, nationally distributed,internationally enjoyed.
-Accomplishments:
-• Started as a undergraduate class project, grew to a 7-figure ARR business with wholesale, retail, food-service operations
-• Custom built majority of SquareSpace website using CSS, HTML, and vanillaJSBuilt and maintained CRM, fulfillment, and sales forecasting system usingAirTable and other GUI relational databases
-• Drove wholesale business using my own CRM platform, enabling nation-wide fulfillment to retailers like Whole Foods, REI, and Nordstrom
-• Managed wholesale and retail operations, employing over 20 staff membersOversaw construction and opened retail facility in Pike Place Market, serving50K+ customers per year
-
-Company: Caveman Dirtbag Sponsorship
-Role: Founder
-Dates: March 2018 - May 2020 (2 years 3 months)
-Location: Seattle, Washington, United States
-Description: Fueling thru-hikers on the Pacific Crest Trail.
-Accomplishments:
-• Created business co-op to sponsor thru-hikers on the PCT
-• Partnered with Patagonia Seattle, Arc'teryx, Enlightened Equipment, and other outdoor brands
-• Selected 2-4 hikers each year to receive cash, gear, and food in care-packages
-• Recognized as preeminent sponsorship amongst thru-hikers and received hundreds of applications each year
-• Sponsored hikers from countries including Brazil, New Zealand, and Israel
-
-Company: Peach
-Role: Business Development Associate
-Dates: August 2016 - November 2016 (4 months)
-Location: Seattle, Washington, United States
-Accomplishments:
-•Performed sales cycle from discovery, to cold calling, to activation of lunch delivery program
-•Onboarded 30+ businesses onto Peach lunch delivery platform including two of Seattle's largest hospitals, JP Morgan, and Weyerhaeuser's headquarters
-•Developed best practices for activating healthcare providers
-
-Company: CardSwapper
-Role: Co-Founder & CEO
-Dates: February 2013 - June 2016 (3 years 5 months)
-Location: Seattle, Washington, United States
-Description: The world's first peer-to-peer trading platform for unused and unwanted gift cards
-Accomplishments:
-• Hired and managed team to develop, and launch application gift card trading application on web and iOS app store
-• Raised seed funding from Jones + Foster Accelerator and from private investors
-• Wrote, submitted, and received patent from the United States Patent andTrademark Office for novel methods of digital gift card exchange
-• Partnered with nations largest gift card liquidation platform to launch cash-for-cards feature
-
-Company: University of Washington - School of Music
-Role: Student Visual and Audio Archiver
-Dates: October 2013 - May 2016 (2 years 8 months)
-Location: Seattle, Washington, United States
-
-• Recorded, live-mixed, and produced live classical, jazz, choral, and orchestral performances in high-fidelity
-• Self-taught Logic Pro, Audacity, and Premiere Pro to increase quality of archived media 
-• Hired independently by graduate students to produce thesis performances due to quality of work
-
-Company: Tango Card, Inc.
-Role: Social Networking Intern
-Dates: June 2013 - September 2013 (4 months)
-Location: Seattle, Washington, United States
-Accomplishments:
-• Managed Facebook, Twitter, and Linkedin social profiles via Hootsuite 
-• Deployed social marketing strategies focused on increasing relevance amongst key demographics• Nearly doubled Twitter following using unpaid-marketing strategies
-
 Education:
 University of Washington - Michael G. Foster School of Business
 Bachelor of Arts - Business Administration, Focus inEntrepreneurship, Entrepreneurship/Entrepreneurial Studies · (2012 - 2016)
@@ -187,10 +65,336 @@ Technical Tools I am comfortable with/have used in the past:
 9. VueJS
 10. Adobe Suite (Photoshop, Illustrator)
 11. NodeJS
+13. Mapbox
+14. OpenStreetMap
 
 
-Projects:
-{
+export const resume: ResumeItem[] = [
+  {
+    company: "Aviation Innovation Holdings (AIH)",
+    urls: ["https://aviation-holdings.com/"],
+    role: "Chief Technology Officer",
+    dates: {
+      start: "October 2025",
+      end: "Present",
+    },
+    location: "Scottsdale, AZ (Remote)",
+    description:
+      "At AIH I am responsible for the technology and operations of the company. My objective is to modernize our technology and infrastructure to enable the growth for our internal teams, external partners, and the aviation industry at large.",
+    accomplishments: [],
+  },
+  {
+    company: "Ruvos",
+    urls: ["https://ruvos.com", "https://objectvision.ai/"],
+    role: "Senior Full Stack Engineer",
+    dates: {
+      start: "May 2023",
+      end: "October 2025",
+    },
+    location: "Tallahassee, FL (Remote)",
+    description:
+      "At Ruvos I have led the full-stack development of multiple novel applications including, ObjectVision (real-time S3 anomaly detection), GrantGetter (a federal & state-level grant-finding tool), and an AI/ML disease simulator in partnership with the World Health Organization.",
+    accomplishments: [
+      "Led full-stack web development of and deployment of four applications using NextJ, Typescript, FramerMotion, Tailwind, Python, AWS, SST, and OpenAi, delivering pixel-perfect UIs, authenticated with custom identity provider solutions, and connected to multiple scalable backend environments.",
+      "Utilized OpenAi’s Assistant API and Python Lambdas to extract and inject third party documents into vector stores, implemented GPT-4o models into frontend applications with custom AI chat interface, allowing users to query specific document information across multiple files in realtime",
+      "Mentored and managed daily work of engineering intern, teaching best-practices in Infrastructure as Code, tokenized security systems, GraphQL API layers, and core AWS resources",
+      "Built full-stack anomaly detection system using Kinesis, Python Lambdas, and Pandas enabling near-realtime monitoring of S3 assets, capable of processing hundreds of millions of events per hour in a multi-tenant environment",
+    ],
+  },
+  {
+    company: "SMST Corp.",
+    urls: ["https://smstanner.com"],
+    role: "Design & Development Consultant",
+    dates: {
+      start: "March 2021",
+      end: " Present",
+    },
+    location: "Bend, OR",
+    description:
+      "I formed SMST Corp as a general contracting company for my freelance engineering and digital design work. Within SMST Corp I have brought cookware companies, AI software packages, and non-profit brands to life.",
+    accomplishments: [
+      "Designed brand guidelines for Mesa Cookware, hired industrial designers, managed overseas manufacturing, and launched a multi-product cookware line in B2C and B2B markets",
+      "Rebuilt entire frontend system for Snipr.ai, a DataShapes company, managing project scope, architecture, and development, and brought a brand new product to clients in 6 months",
+      "Completed full brand refresh for PaleoHacks, a B2C health and wellness brand, delivering a brand book complete with new logo, color palette, and typography",
+      "Currently working with the University of Washington to rebrand an international conference focused on the intersection between native peoples and their ecologies",
+    ],
+  },
+  {
+    company: "Uplinq",
+    urls: ["https://www.uplinq.com/"],
+    role: "Frontend Developer I & II",
+    dates: {
+      start: "April 2022",
+      end: "March 2023",
+    },
+    location: "Scottsdale, AZ (Remote)",
+    description:
+      "Uplinq automates bookkeeping and financial reporting for small businesses. I was one of two frontend engineers responsible for building and maintaining our frontend application.",
+    accomplishments: [
+      "Built entire frontend application with one other developer, servicing thousands of enterprise customers",
+      "Designed and implemented custom UI elements for querying, pagination, and filtering large financial data sets",
+      "Integrated Stripe, Finch, Codat, and Auth0 APIs for secure streaming of sensitive financial data from our clients to our financial advisors",
+      "Led data visualization implementation using the VisX graphics library,delivered fully custom financial charts with immediate, query-dependant updates",
+    ],
+  },
+  {
+    company: "BoviSync",
+    urls: ["https://bovisync.com/"],
+    role: "Full Stack Web Developer & Project Manager",
+    dates: {
+      start: "July 2021",
+      end: "February 2022",
+    },
+    location: "Fond du Lac, WI (Remote)",
+    description:
+      "Bovisync is a dairy herd management software that helps dairy farmers track their cows' diets, health, and production. I was responsible for building and maintaining the frontend and backend of the application, as well as managing the development team.",
+    accomplishments: [
+      "Managed DevOps project that resulted in a 50% decrease of monthly AWSexpenditures, and boosting application reliability and speeds",
+      "Wire-framed, built, and deployed mobile-first web app for optimizing cow diets based on on-hand macro-nutrients using Django, GraphQL, and VueJS",
+      "Spearheaded and delivered multi-year company objective to modernize data visualization service, aggregating data from multiple disparate micro-services using Django, Angular, and PlotlyJS",
+      "Promoted to Engineering Manager led sprints, hiring, and product planning,increased headcount by 30% after departure of CTO and two senior developers",
+    ],
+  },
+  {
+    company: "Actualize",
+    urls: ["https://anyonecanlearntocode.com/"],
+    role: "Teaching Assistant & Mentor",
+    dates: {
+      start: "May 2021",
+      end: "July 2022",
+    },
+    location: "Chicago, IL (Remote)",
+    description:
+      "At Actualize I was responsible for helping students learn the fundamentals of web development, and guiding them through the process of building their own web applications.",
+    accomplishments: [
+      "Taught students how to ideate, architect, and build full stack web applications with CRUD API’s",
+      "Focused on teaching proficiency in Ruby, Rails, Javascript, VueJS, andPostgreSQL",
+      "Held private office hours to help students learn new topics or round-out understanding of concepts covered in class",
+    ],
+  },
+  {
+    company: "Actualize (Student)",
+    urls: ["https://anyonecanlearntocode.com/"],
+    role: "Web Development Student",
+    dates: {
+      start: "January 2021",
+      end: "May 2021",
+    },
+    location: "Chicago, IL (Remote)",
+    description:
+      "At Actualize I learned the fundamentals of web development, building my own full stack applications using Ruby on Rails and VueJS.",
+    accomplishments: [
+      "Learned fundamentals and best practices in full-stack web development in areas of project architecture, backend, frontend, and how to effectively self-teach new technologies",
+      "Generated technical requirements and determined the most effective solutions, created wireframes, designed schema, and researched outside resources• Built and tested the backend, incorporating external APIs• Created pages and RESTful routes, made web requests to retrieve data,formatted and styled results, incorporated libraries and themes",
+    ],
+  },
+  {
+    company: "Joe Chocolate Co.",
+    urls: ["https://www.instagram.com/joechocolateco/"],
+    role: "Co-Founder & CEO",
+    dates: {
+      start: "March 2018",
+      end: "December 2020",
+    },
+    location: "Seattle, WA",
+    description:
+      "Naturally caffeinated dark chocolate. Locally produced, nationally distributed, internationally enjoyed.",
+    accomplishments: [
+      "Started as a undergraduate class project, grew to a 7-figure ARR business with wholesale, retail, food-service operations",
+      "Custom built majority of SquareSpace website using CSS, HTML, and vanillaJS",
+      "Built and maintained CRM, fulfillment, and sales forecasting system using AirTable and other GUI relational databases",
+      "Drove wholesale business using my own CRM platform, enabling nation-wide fulfillment to retailers like Whole Foods, REI, and Nordstrom",
+      "Managed wholesale and retail operations, employing over 20 staff membersOversaw construction and opened retail facility in Pike Place Market, serving 50K+ customers per year",
+      "Raised over $1.6M in funding from private and institutional investors",
+    ],
+  },
+  {
+    company: "Dirtbag Sponsorship",
+    urls: [
+      "https://www.garagegrowngear.com/blogs/brand-bios/joe-chocolate-co-caffeinated-calories-for-going-the-distance",
+    ],
+    role: "Founder",
+    dates: {
+      start: "March 2018",
+      end: "May 2020",
+    },
+    location: "Seattle, WA",
+    description:
+      "A multi-brand collaborative partnership, fueling thru-hikers on the Pacific Crest Trail.",
+    accomplishments: [
+      "Created business co-op to sponsor thru-hikers on the PCT",
+      "Partnered with Patagonia, Arc'teryx, Enlightened Equipment, and other outdoor brands to provide ultra-light necessities and food to thru-hikers",
+      "Selected 2-4 hikers each year to receive cash, gear, and food in care-packages",
+      "Recognized as preeminent sponsorship amongst thru-hikers and received hundreds of applications each year",
+      "Sponsored hikers from countries including Brazil, New Zealand, Israel, and the United States",
+    ],
+  },
+  {
+    company: "CardSwapper",
+    urls: ["https://www.crunchbase.com/organization/cardswapper"],
+    role: "Co-Founder & CEO",
+    dates: {
+      start: "February 2013",
+      end: "June 2016",
+    },
+    location: "Seattle, WA",
+    description:
+      "The world's first peer-to-peer trading platform for unused and unwanted gift cards",
+    accomplishments: [
+      "Hired and managed team to develop, and launch application gift card trading application on web and iOS app store",
+      "Raised seed funding from Jones + Foster Accelerator and from private investors",
+      "Wrote, submitted, and received patent from the United States Patent andTrademark Office for novel methods of digital gift card exchange",
+      "Partnered with nations largest gift card liquidation platform to launch cash-for-cards feature",
+      "Designed, wireframed, and managed implementation of UI/UX for web and mobile applications",
+    ],
+  },
+]
+
+export const resourceObject: {
+  [key in Resource]: {
+    icon: JSX.Element
+    description: string
+    title: string
+  }
+} = {
+  openai: {
+    icon: <TbBrandOpenai className="size-8" />,
+    description:
+      "I use OpenAI and other AI/ML models for a variety of tasks, including building MCP servers, building custom agents for complex tasks, and automating repetitive tasks.",
+    title: "OpenAI",
+  },
+  next: {
+    icon: <TbBrandNextjs className="size-8" />,
+    description:
+      "I use NextJS for the majority of the projects I work on. I choose it regularly because it enables me to build web applications quickly and efficiently.",
+    title: "Next.js",
+  },
+  tailwind: {
+    icon: <TbBrandTailwind className="size-8" />,
+    description:
+      "Tailwind is my go-to CSS framework. I love it because it allows me to build beautiful and responsive designs without writing a lot of custom CSS.",
+    title: "Tailwind CSS",
+  },
+  typescript: {
+    icon: <TbBrandTypescript className="size-8" />,
+    description:
+      "I prefer TypeScript over JavaScript because it helps me catch errors before they happen. It also makes my code more readable and maintainable, and it helps me enforce consistency between my frontend and backend code.",
+    title: "TypeScript",
+  },
+  python: {
+    icon: <TbBrandPython className="size-8" />,
+    description:
+      "I use Python daily for a variety of tasks, including building lambdas for large-scale data processing, interacting with AI/ML models, and automating repetitive tasks.",
+    title: "Python",
+  },
+  mapbox: {
+    icon: <TbGlobe className="size-8" />,
+    description:
+      "I use Mapbox, OpenStreetMap, Google Earth Engine, and other geospatial data tools to build custom maps and visualizations. The intersection between the living earth and its data is a powerful one, and I love to explore it.",
+    title: "Mapbox",
+  },
+  framer: {
+    icon: <TbBrandFramer className="size-8" />,
+    description:
+      "I use Framer Motion to add animations to my web apps. I find that it makes my projects feel more polished and special for the end user.",
+    title: "Framer Motion",
+  },
+  aws: {
+    icon: <TbBrandAws className="size-8" />,
+    description:
+      "This is a bit of a blanket category... I a ton of the tools that AWS offers. Specifically, I spend a lot of time in OpenSearch, Lambda, S3, CloudFront, CloudFormation, and Cognito.",
+    title: "Amazon Web Services & SDK",
+  },
+  graphql: {
+    icon: <TbBrandGraphql className="size-8" />,
+    description:
+      "I am a massive fan of GraphQL. While I admit, it can totally be overkill for some apps, but when I am working with large amounts of data, it is a pivotal resource due to its ability to unify data-sources and specify only the data I need.",
+    title: "GraphQL",
+  },
+  opensearch: {
+    icon: <TbCloudSearch className="size-8" />,
+    description:
+      "I use OpenSearch as a go-to tool for building custom search engines and data analysis tools. I find the integration between OpenSearch and GraphQL to be extremely powerful for powering frontend applications and backend data processing.",
+    title: "OpenSearch",
+  },
+  sst: {
+    icon: (
+      <span className="flex *:size-4 *:stroke-[3.8px]">
+        <TbLetterS />
+        <TbLetterS className="-mx-1" />
+        <TbLetterT />
+      </span>
+    ),
+    description:
+      "SST is the tool I am the biggest fanboy of right now. It allows me to seamlessly manage my AWS resources and deploy full-stack applications with ease. I use it for all of my personal projects.",
+    title: "Serverless Stack Toolkit",
+  },
+  adobe: {
+    icon: <TbBrandAdobe className="size-8" />,
+    description:
+      "I have been using Adobe products for over 20 years. I am proficient in Photoshop, Illustrator, InDesign, and XD. I use these tools to create wireframes, mockups, and other design assets for my projects.",
+    title: "Adobe Creative Cloud",
+  },
+  tanstack: {
+    icon: (
+      <span className="flex *:size-4 *:stroke-[3.8px]">
+        <TbLetterT />
+        <TbLetterA />
+        <TbLetterN />
+      </span>
+    ),
+    description:
+      "I have yet to find a querying and caching tool that is as powerful and easy to use as TanStack. Any time I init a new project, I always start by importing ReactQuery and ReactTable.",
+    title: "TanStack",
+  },
+}
+
+export const projects: Project[] = [
+  {
+    title: "TesseraQL/Global Mosaic",
+    sub_title:
+      "A query engine capable of lightning fast global vector data analysis",
+    url: "<still in development>",
+    frontend_stack: ["NextJS", "TailwindCSS", "Framer Motion", "MapBox"],
+    backend_stack: [
+      "S3",
+      "Lambda (Python)",
+      "SST V3",
+      "OpenSearch",
+      "GraphQL",
+      "AppSync",
+      "DynamoDB",
+      "OpenStreetMap",
+    ],
+    role: "Founder & Lead Developer",
+    description:
+      "I love maps and I love data. These two passions combined turned into the foundation of this project. There is a wealth of global vector data on the open internet, but it is often siloed and difficult to query. TesseraQL empowers users to access open-source and proprietary geospatial data in just seconds. Users can apply multiple filters to their queries and combine them into powerful visualizations or query directly via API.",
+    magic:
+      "TesseraQL can return for hundreds of demographic and geospatial data points for any location on Earth in seconds. What was once a service locked behind the paywalls of ESRI and other proprietary GIS platforms will soon be available to anyone with an internet connection.",
+    affiliation: "Ruvos",
+  },
+  {
+    title: "WHO Pandemic Simulator",
+    sub_title: "AI/ML Disease Simulation for the World Health Organization",
+    url: "https://uat.pandemicsimulator.com/auth",
+    frontend_stack: ["NextJS", "TailwindCSS", "Framer Motion", "MapBox"],
+    backend_stack: [
+      "GraphQL",
+      "AppSync",
+      "DynamoDB",
+      "Lambda (NodeJS & Python)",
+      "Cognito",
+      "SST V3 & V2",
+      "SageMaker",
+    ],
+    role: "Lead Full Stack Engineer",
+    description:
+      "The WHO Pandemic Simulator (WHO PANSIM) is a collaboration between Ruvos, John Hopkins University, and the World Health Organization. The goal of this project is to build a real-time disease simulation tool that can be used to predict the spread of infectious diseases, and to help governments and health organizations make informed decisions about how to respond to pandemics. The tool uses AI/ML models to simulate the spread of diseases based on a variety of factors, including population density, travel patterns, and the effectiveness of public health interventions.",
+    magic:
+      "We've all played Plague Inc. and watched Contagion, but the WHO Pandemic Simulator is the real deal. The models we are building are based on real-world data, and will be used by real-world organizations to make critical decisions that will affect billions of people. It's a huge responsibility, but also an incredible opportunity to use cutting-edge technology that will, quite literally, save lives.",
+    affiliation: "Ruvos",
+  },
+  {
     title: "ObjectVision",
     sub_title: "Real-Time Anomaly Detection for AWS S3 Buckets",
     url: "https://objectvision.ai/",
@@ -210,7 +414,7 @@ Projects:
       "DynamoDB",
       "Lambda (NodeJS & Python)",
       "Cognito",
-      "SST",
+      "SST V2",
     ],
     role: "Lead Full Stack Engineer & Architect",
     description:
@@ -222,7 +426,7 @@ Projects:
   {
     title: "GrantGetter",
     sub_title: "A Grant Finding and Application Tool",
-    url: "<still in development>",
+    url: "https://www.grantgetter.net/",
     frontend_stack: [
       "NextJS",
       "TailwindCSS",
@@ -234,9 +438,10 @@ Projects:
       "GraphQL",
       "AppSync",
       "DynamoDB",
+      "OpenSearch",
       "Lambda (Python)",
       "Cognito",
-      "SST",
+      "SST V2",
     ],
     role: "Lead Full Stack Engineer & Architect",
     description:
@@ -244,6 +449,25 @@ Projects:
     magic:
       "The magic of GrantGetter is the models we are building that are able to categorize users and grants based on a variety of factors, and then match them based on their compatibility. This gives users a much broader, yet personalized, feed of grants that they are eligible for, and a much more streamlined application process.",
     affiliation: "Ruvos",
+  },
+  {
+    title: "RIEL Brand & Website",
+    sub_title:
+      "Brand redesign and website build for an international conference hosted by the University of Washington",
+    url: "https://www.inihkd.com",
+    frontend_stack: ["NextJS", "TailwindCSS", "Framer Motion"],
+    backend_stack: [
+      "SST V3",
+      "CloudFront",
+      "ACM (Certificate Manager)",
+      "Route53",
+    ],
+    role: "Digital Designer & Developer",
+    description:
+      "The University of Washington's International Network of Indigenous Health Knowledge and Development (INIHKD) and Indigenous Wellness Research Institute (IWRI) host an international conference that brings together indigenous peoples, scholars, and policymakers to discuss the intersection between native peoples and their native ecologies. I was responsible for redesigning the conference's brand and building a new website to promote the 2025 conference.",
+    magic:
+      "Getting to consult, design, and build an entire brand presence for an international conference was extremely fulfilling. So often, people feel stuck with the limited options available to them with out-of-the-box website solutions. I was able to create a gorgeous brand and pixel-perfect website that was completely unique and a true reflection of the conference's mission and the people who will attend.",
+    affiliation: "University of Washington",
   },
   {
     title: "Snipr.ai",
@@ -257,7 +481,7 @@ Projects:
       "RDS",
       "S3",
       "Cognito",
-      "SST",
+      "SST V2",
       "AWS Rekognition",
       "AWS Transcribe",
     ],
@@ -279,7 +503,7 @@ Projects:
       "ReactQuery",
       "VisX",
     ],
-    backend_stack: [],
+    backend_stack: ["<I didn't work on the backend for this project>"],
     role: "Frontend Developer",
     description:
       "Small business bookkeeping is hard! There are so many moving parts, and with payroll and expenses always stacking up, staying on top of your finances can be a full-time job. Uplinq is a tool that outsources the majority of bookkeeping tasks and splits the work between AI and human accountants. While working on our bookkeeping software, I was responsible for building pixel-perfect ui tools that allowed our users to interact with their financial data in ways that were truly novel in the FinTech space.",
@@ -287,3 +511,4 @@ Projects:
       "I have been a small business owner for most of my adult life, and, to put it simply, I hate bookkeeping! What made Uplinq so cool was the hands-on approach it took to integrating with disparate data sources, and amalgamating them into a single, cohesive environment that was truly beautiful.",
     affiliation: "Uplinq",
   },
+]

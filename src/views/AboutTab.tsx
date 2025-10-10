@@ -1,6 +1,6 @@
 const AboutTab = () => {
   return (
-    <div className="flex min-h-0 lg:w-1/2 max-w-[800px] flex-col gap-4 overflow-y-auto p-6 font-mono">
+    <div className="flex min-h-0 max-w-[800px] flex-col gap-4 overflow-y-auto p-6 font-mono lg:w-1/2">
       <p className="">
         My career (and life) has been pretty darn fun up to this point!
       </p>
@@ -26,9 +26,9 @@ const AboutTab = () => {
         that ever since. I&apos;ve worked on a lot of different projects, but
         the ones that I am most proud of are the ones that have a direct impact
         on people&apos;s lives. I&apos;ve built software that helps dairy
-        farmers track their cows&apos; diets, apps that help small businesses
-        automate their bookkeeping with AI, and systems that help multinational
-        organizations protect their datastores from bad actors.
+        farmers track cows&apos; diets, apps that help small businesses automate
+        their bookkeeping with AI, and applications that can help health
+        outcomes for entire nations.
       </p>
       <p>
         The thing that makes me most unique as a developer is the fact that I

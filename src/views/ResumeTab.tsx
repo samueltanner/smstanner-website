@@ -11,7 +11,7 @@ import {
 } from "react-icons/tb"
 
 const ResumeTab = () => {
-  const [selectedCompany, setSelectedCompany] = useState<string>("Ruvos")
+  const [selectedCompany, setSelectedCompany] = useState<string>("AIH")
   const [copied, setCopied] = useState(false)
 
   const resumeTitles = resume.map((r) => r.company)
@@ -129,7 +129,7 @@ const ResumeTab = () => {
               <TbBrandGithub className="flex size-5 flex-shrink-0" />
               <p>samueltanner</p>
             </a>
-            <button className="flex items-center gap-2 fade-in-out hover:text-red-500"
+            {/* <button className="flex items-center gap-2 fade-in-out hover:text-red-500"
               onClick={() => {
                 window.open("/SamTannerResume.pdf")
               }}
@@ -138,7 +138,7 @@ const ResumeTab = () => {
               <p>
                 Download my resume
               </p>
-            </button>
+            </button> */}
           </div>
 
           {resume.map((r, i) => (
