@@ -7,23 +7,39 @@ import {
   TbBrandFramer,
   TbBrandGraphql,
   TbBrandNextjs,
+  TbBrandOpenai,
   TbBrandPython,
   TbBrandTailwind,
   TbBrandTypescript,
+  TbGlobe,
   TbLetterA,
   TbLetterN,
   TbLetterS,
   TbLetterT,
+  TbCloudSearch,
 } from "react-icons/tb"
 
 export const resume: ResumeItem[] = [
   {
+    company: "AIH",
+    urls: ["https://aviation-holdings.com/"],
+    role: "Chief Technology Officer",
+    dates: {
+      start: "October 2025",
+      end: "Present",
+    },
+    location: "Scottsdale, AZ (Remote)",
+    description:
+      "At AIH I am responsible for the technology and operations of the company. My objective is to modernize our technology and infrastructure to enable the growth for our internal teams, external partners, and the aviation industry at large.",
+    accomplishments: [],
+  },
+  {
     company: "Ruvos",
     urls: ["https://ruvos.com", "https://objectvision.ai/"],
-    role: "Full Stack Engineer",
+    role: "Senior Full Stack Engineer",
     dates: {
       start: "May 2023",
-      end: "Present",
+      end: "October 2025",
     },
     location: "Tallahassee, FL (Remote)",
     description:
@@ -191,6 +207,12 @@ export const resourceObject: {
     title: string
   }
 } = {
+  openai: {
+    icon: <TbBrandOpenai className="size-8" />,
+    description:
+      "I use OpenAI and other AI/ML models for a variety of tasks, including building MCP servers, building custom agents for complex tasks, and automating repetitive tasks.",
+    title: "OpenAI",
+  },
   next: {
     icon: <TbBrandNextjs className="size-8" />,
     description:
@@ -215,6 +237,12 @@ export const resourceObject: {
       "I use Python daily for a variety of tasks, including building lambdas for large-scale data processing, interacting with AI/ML models, and automating repetitive tasks.",
     title: "Python",
   },
+  mapbox: {
+    icon: <TbGlobe className="size-8" />,
+    description:
+      "I use Mapbox, OpenStreetMap, Google Earth Engine, and other geospatial data tools to build custom maps and visualizations. The intersection between the living earth and its data is a powerful one, and I love to explore it.",
+    title: "Mapbox",
+  },
   framer: {
     icon: <TbBrandFramer className="size-8" />,
     description:
@@ -232,6 +260,12 @@ export const resourceObject: {
     description:
       "I am a massive fan of GraphQL. While I admit, it can totally be overkill for some apps, but when I am working with large amounts of data, it is a pivotal resource due to its ability to unify data-sources and specify only the data I need.",
     title: "GraphQL",
+  },
+  opensearch: {
+    icon: <TbCloudSearch className="size-8" />,
+    description:
+      "I use OpenSearch as a go-to tool for building custom search engines and data analysis tools. I find the integration between OpenSearch and GraphQL to be extremely powerful for powering frontend applications and backend data processing.",
+    title: "OpenSearch",
   },
   sst: {
     icon: (
@@ -267,9 +301,32 @@ export const resourceObject: {
 
 export const projects: Project[] = [
   {
+    title: "TesseraQL/Global Mosaic",
+    sub_title:
+      "A query engine capable of lightning fast global vector data analysis",
+    url: "<still in development>",
+    frontend_stack: ["NextJS", "TailwindCSS", "Framer Motion", "MapBox"],
+    backend_stack: [
+      "S3",
+      "Lambda (Python)",
+      "SST V3",
+      "OpenSearch",
+      "GraphQL",
+      "AppSync",
+      "DynamoDB",
+      "OpenStreetMap",
+    ],
+    role: "Founder & Lead Developer",
+    description:
+      "I love maps and I love data. These two passions combined turned into the foundation of this project. There is a wealth of global vector data on the open internet, but it is often siloed and difficult to query. TesseraQL empowers users to access open-source and proprietary geospatial data in just seconds. Users can apply multiple filters to their queries and combine them into powerful visualizations or query directly via API.",
+    magic:
+      "TesseraQL can return for hundreds of demographic and geospatial data points for any location on Earth in seconds. What was once a service locked behind the paywalls of ESRI and other proprietary GIS platforms will soon be available to anyone with an internet connection.",
+    affiliation: "Ruvos",
+  },
+  {
     title: "WHO Pandemic Simulator",
     sub_title: "AI/ML Disease Simulation for the World Health Organization",
-    url: "<still in development>",
+    url: "https://uat.pandemicsimulator.com/auth",
     frontend_stack: ["NextJS", "TailwindCSS", "Framer Motion", "MapBox"],
     backend_stack: [
       "GraphQL",

@@ -9,6 +9,9 @@ export default $config({
     }
   },
   async run() {
+    const awsAccount = aws.getCallerIdentity()
+    const awsAccountId = (await awsAccount).accountId
+    console.log(`AWS Account ID: ${awsAccountId}`)
     const domain = "smstanner.com"
     new sst.aws.Nextjs("SMSTanner", {
       domain: {

@@ -1,17 +1,20 @@
-import { useRef, useState } from "react";
+import { useRef, useState } from "react"
 import {
   TbBrandAdobe,
   TbBrandAws,
   TbBrandFramer,
   TbBrandGraphql,
   TbBrandNextjs,
+  TbBrandOpenai,
   TbBrandPython,
   TbBrandTailwind,
   TbBrandTypescript,
+  TbCloudSearch,
+  TbGlobe,
   TbLetterA,
   TbLetterN,
   TbLetterS,
-  TbLetterT,
+  TbLetterT
 } from "react-icons/tb"
 import { resourceObject } from "@/utils/constants"
 
@@ -19,15 +22,18 @@ import { AnimatePresence, motion, Variants } from "framer-motion"
 
 export type Resource =
   | "next"
+  | "openai"
   | "tailwind"
   | "typescript"
   | "python"
   | "framer"
   | "aws"
   | "graphql"
+  | "opensearch"
   | "sst"
   | "adobe"
   | "tanstack"
+  | "mapbox"
 
 const descriptionVariants: Variants = {
   hidden: {
@@ -80,55 +86,72 @@ const ProjectsSubHeader = () => {
   return (
     <div className="relative flex w-full flex-col items-center">
       <div
-        className="custom-box-shadow flex w-[90%] items-center justify-between gap-6 border-4 border-black px-4 py-2 *:flex-shrink-0 *:cursor-pointer overflow-x-auto"
+        className="custom-box-shadow flex w-[90%] items-center justify-between gap-6 overflow-x-auto border-4 border-black px-4 py-2 *:flex-shrink-0 *:cursor-pointer"
         onMouseLeave={handleMouseLeave}
         ref={subHeaderRef}
       >
+        <TbBrandOpenai
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "openai" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("openai")
+          }}
+        />
         <TbBrandNextjs
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "next" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "next" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("next")
           }}
         />
         <TbBrandTailwind
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "tailwind" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "tailwind" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("tailwind")
           }}
         />
         <TbBrandTypescript
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "typescript" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "typescript" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("typescript")
           }}
         />
         <TbBrandPython
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "python" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "python" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("python")
           }}
         />
+        <TbGlobe
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "mapbox" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("mapbox")
+          }}
+        />
         <TbBrandFramer
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "framer" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "framer" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("framer")
           }}
         />
         <TbBrandAws
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "aws" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "aws" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("aws")
           }}
         />
         <TbBrandGraphql
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "graphql" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "graphql" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("graphql")
           }}
         />
-
+        <TbCloudSearch
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "opensearch" ? "text-red-500" : ""}`}
+          onClick={() => {
+            setSelectedIcon("opensearch")
+          }}
+        />
         <span
-          className={`fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500 ${selectedIcon === "sst" ? "text-red-500" : ""}`}
+          className={`flex fade-in-out *:size-4 *:stroke-[3.8px] hover:text-red-500 ${selectedIcon === "sst" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("sst")
           }}
@@ -139,7 +162,7 @@ const ProjectsSubHeader = () => {
         </span>
 
         <span
-          className={`fade-in-out flex *:size-4 *:stroke-[3.8px] hover:text-red-500 ${selectedIcon === "tanstack" ? "text-red-500" : ""}`}
+          className={`flex fade-in-out *:size-4 *:stroke-[3.8px] hover:text-red-500 ${selectedIcon === "tanstack" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("tanstack")
           }}
@@ -149,7 +172,7 @@ const ProjectsSubHeader = () => {
           <TbLetterN />
         </span>
         <TbBrandAdobe
-          className={`fade-in-out size-8 hover:text-red-500 ${selectedIcon === "adobe" ? "text-red-500" : ""}`}
+          className={`size-8 fade-in-out hover:text-red-500 ${selectedIcon === "adobe" ? "text-red-500" : ""}`}
           onClick={() => {
             setSelectedIcon("adobe")
           }}
@@ -174,7 +197,7 @@ const ProjectsSubHeader = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.25 }}
-                className="flex flex-col gap-4 overflow-auto p-4 text-start leading-8 h-64 md:h-fit"
+                className="flex h-64 flex-col gap-4 overflow-auto p-4 text-start leading-8 md:h-fit"
               >
                 <span className="flex items-center gap-4">
                   {resourceObject?.[selectedIcon]?.icon}
